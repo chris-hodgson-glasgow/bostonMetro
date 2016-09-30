@@ -1,15 +1,13 @@
 package metroPackage;
 
-public class Subway implements GraphInterface {
+public class Subway implements Graph {
 
-	@Override
 	public void setNode(int id, String name, String line) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
-	public NodeInterface getNode(int id) {
+	public Node getNode(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

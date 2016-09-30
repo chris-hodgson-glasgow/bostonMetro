@@ -1,9 +1,9 @@
 package metroPackage;
 
-public interface GraphInterface {
+public interface Graph {
 
 	public void setNode(int id,String name, String line);
 	
-	public NodeInterface getNode(int id);
+	public Node getNode(int id);
 	
 }

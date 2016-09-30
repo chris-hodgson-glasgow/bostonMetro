@@ -3,7 +3,7 @@ package metroPackage;
 public class Track {
     private Edge track;
 
-    public Track(int id, Node stationA, Node stationB){
+    public Track(int id, Station stationA, Station stationB){
         track = new GraphEdge(id, stationA, stationB);
     }
 
@@ -15,11 +15,11 @@ public class Track {
         return (track.getId());
     }
 
-    public Node getStationA(){
+    public Station getStationA(){
         return (track.getNodeA());
     }
 
-    public Node getStationB(){
+    public Station getStationB(){
         return (track.getNodeB());
     }
 

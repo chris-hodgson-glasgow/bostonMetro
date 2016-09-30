@@ -2,7 +2,7 @@ package metroPackage;
 
 import java.util.Arrays;
 
-public class Station implements NodeInterface {
+public class Station implements Node {
 
 	private int id;
 	private String name;
@@ -23,15 +23,13 @@ public class Station implements NodeInterface {
 		this.lines = lines;
 		
 	}
-	
-	@Override
+
 	public String getName() {
 		
 		return name;
 	}
 
-	
-	@Override
+
 	public String[] getNeighbours(String edge) {
 		
 		String[] neighbourHolder = new String[2];
