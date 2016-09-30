@@ -1,0 +1,17 @@
+package metroPackage;
+
+public class Station implements NodeInterface {
+
+	@Override
+	public String getName(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int[] getNeighbours(String edge) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

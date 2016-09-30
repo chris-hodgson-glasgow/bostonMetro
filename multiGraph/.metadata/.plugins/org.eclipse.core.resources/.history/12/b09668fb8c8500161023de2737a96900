@@ -1,0 +1,8 @@
+package v0_1Package;
+
+public class Node {
+	
+	int id;
+	String name;
+
+}

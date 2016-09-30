@@ -1,0 +1,11 @@
+package metroPackage;
+
+public interface NodeInterface {
+
+	public String getName(int id);
+	
+	public int[] getNeighbours(String edge);
+	
+	
+	
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/bostonMetroGraphV0.1/src/v0_1Package/MetroMapParser.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="v0_1Package.MetroMapParser"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="bostonMetroGraphV0.1"/>
+</launchConfiguration>
