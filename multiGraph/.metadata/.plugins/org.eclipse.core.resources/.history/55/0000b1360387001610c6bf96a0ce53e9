@@ -1,5 +1,0 @@
-package metroPackage;
-
-public interface GraphInterface {
-
-}
