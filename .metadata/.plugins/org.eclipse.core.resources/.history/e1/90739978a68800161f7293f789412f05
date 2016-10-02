@@ -1,0 +1,23 @@
+package bostonMetro;
+
+public class Track implements EdgeInterface {
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public NodeInterface getInboundNode() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public NodeInterface getOutboundNode() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

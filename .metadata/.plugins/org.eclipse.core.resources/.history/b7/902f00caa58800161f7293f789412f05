@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_VOxOoIibEeaMxKpKhz0Pbg" name="bostonMetroV0_3">
+    <eAnnotations xmi:id="_Ylt8UIibEeaMxKpKhz0Pbg" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_YlwYkIibEeaMxKpKhz0Pbg" source="codegen">
+        <details xmi:id="_YlwYkYibEeaMxKpKhz0Pbg" key="codegenDirectory" value="/bostonMetroV0.3/src"/>
+        <details xmi:id="_Yl5igIibEeaMxKpKhz0Pbg" key="observedFolders" value="/bostonMetroV0.3/src"/>
+        <details xmi:id="_y_r5sIibEeaiFe0qw6O2FQ" key="AssociatedSourceCode" value="/bostonMetroV0.3/src/bostonMetro/GraphInterface.java;1055525256/1;/bostonMetroV0.3/src/bostonMetro/NodeInterface.java;3910117445/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_ywbVsIibEeaiFe0qw6O2FQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_ywiDYIibEeaiFe0qw6O2FQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_ywiqcIibEeaiFe0qw6O2FQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_ywiqcYibEeaiFe0qw6O2FQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_ywiqcoibEeaiFe0qw6O2FQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_ywiqc4ibEeaiFe0qw6O2FQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_ywiqdIibEeaiFe0qw6O2FQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_ywiqdYibEeaiFe0qw6O2FQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_ywmU0IibEeaiFe0qw6O2FQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ywsbcIibEeaiFe0qw6O2FQ" name="bostonMetro">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_ywu3sIibEeaiFe0qw6O2FQ" name="GraphInterface">
+        <ownedOperation xmi:id="_r1DpkIicEeaiFe0qw6O2FQ" name="getNodeById">
+          <ownedParameter xmi:id="_r1DpkYicEeaiFe0qw6O2FQ" name="id">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_r1VWYIicEeaiFe0qw6O2FQ" type="_1nmhsIicEeaiFe0qw6O2FQ" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_r1E3sIicEeaiFe0qw6O2FQ" name="getNodeByName">
+          <ownedParameter xmi:id="_r1E3sYicEeaiFe0qw6O2FQ" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_r1E3soicEeaiFe0qw6O2FQ" type="_1nmhsIicEeaiFe0qw6O2FQ" isOrdered="true" direction="return">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r1FewIicEeaiFe0qw6O2FQ" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_r1STEYicEeaiFe0qw6O2FQ" name="addNode">
+          <ownedParameter xmi:id="_r1STEoicEeaiFe0qw6O2FQ" name="inputNode" type="_1nmhsIicEeaiFe0qw6O2FQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_r1ThMYicEeaiFe0qw6O2FQ" name="addEdge">
+          <ownedParameter xmi:id="_r1UIQIicEeaiFe0qw6O2FQ" name="edge" type="_r1S6IIicEeaiFe0qw6O2FQ"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_r1UvUIicEeaiFe0qw6O2FQ" name="getPath">
+          <ownedParameter xmi:id="_r1UvUYicEeaiFe0qw6O2FQ" name="startStation" type="_1nmhsIicEeaiFe0qw6O2FQ"/>
+          <ownedParameter xmi:id="_r1UvUoicEeaiFe0qw6O2FQ" name="endStation" type="_1nmhsIicEeaiFe0qw6O2FQ"/>
+          <ownedParameter xmi:id="_r1UvU4icEeaiFe0qw6O2FQ" type="_r1S6IIicEeaiFe0qw6O2FQ" isOrdered="true" direction="return">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_r1UvVIicEeaiFe0qw6O2FQ" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_r1S6IIicEeaiFe0qw6O2FQ" name="EdgeInterface"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_1nmhsIicEeaiFe0qw6O2FQ" name="NodeInterface"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_r0874IicEeaiFe0qw6O2FQ" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_r0874YicEeaiFe0qw6O2FQ" name="util">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_r1MzgIicEeaiFe0qw6O2FQ" name="List"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_YlyNwIibEeaMxKpKhz0Pbg">
+      <eAnnotations xmi:id="_Yl0C8IibEeaMxKpKhz0Pbg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_Yl3GQIibEeaMxKpKhz0Pbg" base_Package="_VOxOoIibEeaMxKpKhz0Pbg">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Reference xmi:id="_r1NakIicEeaiFe0qw6O2FQ" base_Element="_r1MzgIicEeaiFe0qw6O2FQ"/>
+  <UMLLabProfile:Reference xmi:id="_r1ThMIicEeaiFe0qw6O2FQ" base_Element="_r1S6IIicEeaiFe0qw6O2FQ"/>
+</xmi:XMI>

@@ -6,4 +6,6 @@ public interface GraphInterface {
 	
 	public NodeInterface getNode(int id);
 	
+	public int[] getNeighbours(int id, String line);
+	
 }

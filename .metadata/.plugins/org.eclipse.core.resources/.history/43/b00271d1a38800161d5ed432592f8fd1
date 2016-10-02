@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_VOxOoIibEeaMxKpKhz0Pbg" name="bostonMetroV0_3">
+    <eAnnotations xmi:id="_Ylt8UIibEeaMxKpKhz0Pbg" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_YlwYkIibEeaMxKpKhz0Pbg" source="codegen">
+        <details xmi:id="_YlwYkYibEeaMxKpKhz0Pbg" key="codegenDirectory" value="/bostonMetroV0.3/src"/>
+        <details xmi:id="_Yl5igIibEeaMxKpKhz0Pbg" key="observedFolders" value="/bostonMetroV0.3/src"/>
+      </contents>
+    </eAnnotations>
+    <profileApplication xmi:id="_YlyNwIibEeaMxKpKhz0Pbg">
+      <eAnnotations xmi:id="_Yl0C8IibEeaMxKpKhz0Pbg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_Yl3GQIibEeaMxKpKhz0Pbg" base_Package="_VOxOoIibEeaMxKpKhz0Pbg">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+</xmi:XMI>

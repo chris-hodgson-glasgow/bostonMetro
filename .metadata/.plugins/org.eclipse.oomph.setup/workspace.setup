@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Workspace
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    name="workspace">
+  <setupTask
+      xsi:type="setup:VariableTask"
+      name="workspace.location"
+      value="C:\Users\Chris\Documents\bostonMetro"/>
+  <stream href="profiles:/profile/local-copy-of-kbut-1475406432469#/0/@streams[name='master']"/>
+  <stream href="profiles:/index#//@projectCatalogs[name='de.yatta.profiles']/@projects[@id='local-copy-of-kbut-1475406432469']/@streams[name='master']"/>
+</setup:Workspace>

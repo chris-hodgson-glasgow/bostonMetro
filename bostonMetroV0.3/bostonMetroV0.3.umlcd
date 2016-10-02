@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_LKw-0Ii2EeaNZ_U0Oe9OTQ">
+  <modelElement href="bostonMetroV0.3.uml#_Lilo8Ii2EeaNZ_U0Oe9OTQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Ms8jQIi2EeaNZ_U0Oe9OTQ" sourceAnchor="69.0,0.0" targetAnchor="0.0,92.0" target="_MudmMIi2EeaNZ_U0Oe9OTQ" source="_MtEfEIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_LmfRgIi2EeaNZ_U0Oe9OTQ"/>
+    <bendpoints xmi:id="_oxrZUIi2EeaNZ_U0Oe9OTQ" sourceY="-63" targetX="-121"/>
+    <stereotypes xmi:id="_Ms8jQYi2EeaNZ_U0Oe9OTQ" name="Reference">
+      <modelElement href="bostonMetroV0.3.uml#_LmgfoIi2EeaNZ_U0Oe9OTQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Ms8jQoi2EeaNZ_U0Oe9OTQ" text="">
+      <visualProperties xmi:id="_M_H4YIi2EeaNZ_U0Oe9OTQ" position="27.0,-19.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Ms8jQ4i2EeaNZ_U0Oe9OTQ" aggregationKind="NONE" name="">
+      <modelElement href="bostonMetroV0.3.uml#_LmfRgYi2EeaNZ_U0Oe9OTQ"/>
+      <visualProperties xmi:id="_M_GqQIi2EeaNZ_U0Oe9OTQ" position="2.5,-51.333333333333314"/>
+      <visibility xmi:id="_Ms8jRIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_Ms8jRYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Ms8jRoi2EeaNZ_U0Oe9OTQ" aggregationKind="NONE" name="inboundNode" navigable="true">
+      <modelElement href="bostonMetroV0.3.uml#_LjXFAIi2EeaNZ_U0Oe9OTQ"/>
+      <visualProperties xmi:id="_M_IfcIi2EeaNZ_U0Oe9OTQ" position="-99.83333333333337,2.0"/>
+      <visibility xmi:id="_Ms8jR4i2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_Ms8jSIi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_MtD4AIi2EeaNZ_U0Oe9OTQ" sourceAnchor="139.0,18.0" targetAnchor="65.0,123.0" target="_MudmMIi2EeaNZ_U0Oe9OTQ" source="_MtEfEIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_LmhGsIi2EeaNZ_U0Oe9OTQ"/>
+    <bendpoints xmi:id="_oxrZUYi2EeaNZ_U0Oe9OTQ" sourceX="116" targetY="50"/>
+    <stereotypes xmi:id="_MtD4AYi2EeaNZ_U0Oe9OTQ" name="Reference">
+      <modelElement href="bostonMetroV0.3.uml#_LmiU0Ii2EeaNZ_U0Oe9OTQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_MtD4Aoi2EeaNZ_U0Oe9OTQ" text="">
+      <visualProperties xmi:id="_M_JtkIi2EeaNZ_U0Oe9OTQ" position="-39.0,-38.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_MtD4A4i2EeaNZ_U0Oe9OTQ" aggregationKind="NONE" name="">
+      <modelElement href="bostonMetroV0.3.uml#_LmhGsYi2EeaNZ_U0Oe9OTQ"/>
+      <visualProperties xmi:id="_M_JGgIi2EeaNZ_U0Oe9OTQ" position="60.0,-45.5"/>
+      <visibility xmi:id="_MtD4BIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MtD4BYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_MtD4Boi2EeaNZ_U0Oe9OTQ" aggregationKind="NONE" name="outboundNode" navigable="true">
+      <modelElement href="bostonMetroV0.3.uml#_LjYTIIi2EeaNZ_U0Oe9OTQ"/>
+      <visualProperties xmi:id="_M_KUoIi2EeaNZ_U0Oe9OTQ" position="2.0,2.1666666666666856"/>
+      <visibility xmi:id="_MtD4B4i2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MtD4CIi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MuFywIi2EeaNZ_U0Oe9OTQ" targetItem="_MuKEMIi2EeaNZ_U0Oe9OTQ" sourceItem="_MtyQwIi2EeaNZ_U0Oe9OTQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_MuHA4Yi2EeaNZ_U0Oe9OTQ" targetItem="_MuKEOIi2EeaNZ_U0Oe9OTQ" sourceItem="_MuHA4Ii2EeaNZ_U0Oe9OTQ"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_MuJdIIi2EeaNZ_U0Oe9OTQ" source="_MuKEMIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_LmiU0Yi2EeaNZ_U0Oe9OTQ"/>
+    <stereotypes xmi:id="_MuJdIYi2EeaNZ_U0Oe9OTQ" name="Reference">
+      <modelElement href="bostonMetroV0.3.uml#_Lmji8Ii2EeaNZ_U0Oe9OTQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_MuJdIoi2EeaNZ_U0Oe9OTQ" text=""/>
+    <sourceRole xmi:id="_MuJdI4i2EeaNZ_U0Oe9OTQ" aggregationKind="NONE" name="">
+      <modelElement href="bostonMetroV0.3.uml#_LmiU0oi2EeaNZ_U0Oe9OTQ"/>
+      <visibility xmi:id="_MuJdJIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MuJdJYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_MuJdJoi2EeaNZ_U0Oe9OTQ" aggregationKind="NONE" name="fileInput" navigable="true">
+      <modelElement href="bostonMetroV0.3.uml#_LmGP8Ii2EeaNZ_U0Oe9OTQ"/>
+      <visibility xmi:id="_MuJdJ4i2EeaNZ_U0Oe9OTQ" label="-"/>
+      <cardinality xmi:id="_MuJdKIi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_MvFRQIi2EeaNZ_U0Oe9OTQ" sourceAnchor="136.0,0.0" targetAnchor="95.0,123.0" dashed="true" superClass="_MudmMIi2EeaNZ_U0Oe9OTQ" subClass="_MvdrwIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_Ll5boIi2EeaNZ_U0Oe9OTQ"/>
+    <bendpoints xmi:id="_oxpkIIi2EeaNZ_U0Oe9OTQ" sourceY="-22" targetX="247" targetY="-9"/>
+    <bendpoints xmi:id="_oxqLMIi2EeaNZ_U0Oe9OTQ" sourceX="-247" sourceY="-22" targetY="-9"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Mv7l0Ii2EeaNZ_U0Oe9OTQ" sourceAnchor="270.0,0.0" targetAnchor="177.0,49.0" target="_MudmMIi2EeaNZ_U0Oe9OTQ" source="_Mw7EUIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_Lmji8Yi2EeaNZ_U0Oe9OTQ"/>
+    <bendpoints xmi:id="_oxqLMYi2EeaNZ_U0Oe9OTQ" sourceY="-263" targetX="321"/>
+    <stereotypes xmi:id="_Mw09soi2EeaNZ_U0Oe9OTQ" name="Reference">
+      <modelElement href="bostonMetroV0.3.uml#_LmkxEIi2EeaNZ_U0Oe9OTQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Mw0WoIi2EeaNZ_U0Oe9OTQ" text="">
+      <visualProperties xmi:id="_M_LiwIi2EeaNZ_U0Oe9OTQ" position="-162.0,-9.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Mw09sIi2EeaNZ_U0Oe9OTQ" aggregationKind="NONE" name="">
+      <modelElement href="bostonMetroV0.3.uml#_Lmji8oi2EeaNZ_U0Oe9OTQ"/>
+      <visualProperties xmi:id="_M_K7sIi2EeaNZ_U0Oe9OTQ" position="-20.0,-260.0"/>
+      <visibility xmi:id="_Mw4oEIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_Mw4BAIi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Mw09sYi2EeaNZ_U0Oe9OTQ" aggregationKind="NONE" name="allNodes" navigable="true">
+      <modelElement href="bostonMetroV0.3.uml#_LmIsMIi2EeaNZ_U0Oe9OTQ"/>
+      <visualProperties xmi:id="_M_MJ0Ii2EeaNZ_U0Oe9OTQ" position="83.0,-49.0"/>
+      <visibility xmi:id="_Mw4oEoi2EeaNZ_U0Oe9OTQ" label="-"/>
+      <cardinality xmi:id="_Mw4oEYi2EeaNZ_U0Oe9OTQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_MwaG8Ii2EeaNZ_U0Oe9OTQ" sourceAnchor="0.0,87.0" targetAnchor="139.0,48.0" target="_MtEfEIi2EeaNZ_U0Oe9OTQ" source="_Mw7EUIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_LmlYIIi2EeaNZ_U0Oe9OTQ"/>
+    <bendpoints xmi:id="_oxqLMoi2EeaNZ_U0Oe9OTQ" sourceX="-54" targetX="225" targetY="196"/>
+    <bendpoints xmi:id="_oxqLM4i2EeaNZ_U0Oe9OTQ" sourceX="-54" sourceY="-196" targetX="225"/>
+    <stereotypes xmi:id="_Mw09toi2EeaNZ_U0Oe9OTQ" name="Reference">
+      <modelElement href="bostonMetroV0.3.uml#_LmmmQIi2EeaNZ_U0Oe9OTQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Mw09s4i2EeaNZ_U0Oe9OTQ" text="">
+      <visualProperties xmi:id="_M_NX8Ii2EeaNZ_U0Oe9OTQ" position="-38.0,-56.5"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Mw09tIi2EeaNZ_U0Oe9OTQ" aggregationKind="NONE" name="">
+      <modelElement href="bostonMetroV0.3.uml#_LmlYIYi2EeaNZ_U0Oe9OTQ"/>
+      <visualProperties xmi:id="_M_Mw4Ii2EeaNZ_U0Oe9OTQ" position="-53.0,-85.5"/>
+      <visibility xmi:id="_Mw4oFYi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_Mw4oFIi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Mw09tYi2EeaNZ_U0Oe9OTQ" aggregationKind="NONE" name="allEdges" navigable="true">
+      <modelElement href="bostonMetroV0.3.uml#_LmJTQIi2EeaNZ_U0Oe9OTQ"/>
+      <visualProperties xmi:id="_M_N_AIi2EeaNZ_U0Oe9OTQ" position="42.25,2.5"/>
+      <visibility xmi:id="_Mw5PIYi2EeaNZ_U0Oe9OTQ" label="-"/>
+      <cardinality xmi:id="_Mw5PIIi2EeaNZ_U0Oe9OTQ" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_MwrMsIi2EeaNZ_U0Oe9OTQ" sourceAnchor="283.0,0.0" targetAnchor="259.0,173.0" dashed="true" superClass="_MtXaAIi2EeaNZ_U0Oe9OTQ" subClass="_Mw7EUIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_Ll7Q0Yi2EeaNZ_U0Oe9OTQ"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_MxZlcIi2EeaNZ_U0Oe9OTQ" sourceAnchor="0.0,46.0" targetAnchor="0.0,62.0" target="_MudmMIi2EeaNZ_U0Oe9OTQ" source="_MykqIIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_LmmmQYi2EeaNZ_U0Oe9OTQ"/>
+    <bendpoints xmi:id="_oxqyQIi2EeaNZ_U0Oe9OTQ" sourceX="-14" targetX="-438" targetY="312"/>
+    <bendpoints xmi:id="_oxqyQYi2EeaNZ_U0Oe9OTQ" sourceX="-14" sourceY="-312" targetX="-438"/>
+    <stereotypes xmi:id="_Myg_wYi2EeaNZ_U0Oe9OTQ" name="Reference">
+      <modelElement href="bostonMetroV0.3.uml#_Lmn0YIi2EeaNZ_U0Oe9OTQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_MygYsIi2EeaNZ_U0Oe9OTQ" text="">
+      <visualProperties xmi:id="_M_PNIIi2EeaNZ_U0Oe9OTQ" position="-19.0,-74.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_MygYsYi2EeaNZ_U0Oe9OTQ" aggregationKind="NONE" name="">
+      <modelElement href="bostonMetroV0.3.uml#_LmmmQoi2EeaNZ_U0Oe9OTQ"/>
+      <visualProperties xmi:id="_M_OmEIi2EeaNZ_U0Oe9OTQ" position="-35.0,-50.0"/>
+      <visibility xmi:id="_Myi08Ii2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MyiN4Ii2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Myg_wIi2EeaNZ_U0Oe9OTQ" aggregationKind="NONE" name="inboundStation" navigable="true">
+      <modelElement href="bostonMetroV0.3.uml#_LmLIcoi2EeaNZ_U0Oe9OTQ"/>
+      <visualProperties xmi:id="_M_P0MIi2EeaNZ_U0Oe9OTQ" position="-434.99999999999983,5.0"/>
+      <visibility xmi:id="_Myi08oi2EeaNZ_U0Oe9OTQ" label="-"/>
+      <cardinality xmi:id="_Myi08Yi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Mx3fgIi2EeaNZ_U0Oe9OTQ" sourceAnchor="0.0,59.0" targetAnchor="0.0,49.0" target="_MudmMIi2EeaNZ_U0Oe9OTQ" source="_MykqIIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_Lmn0YYi2EeaNZ_U0Oe9OTQ"/>
+    <bendpoints xmi:id="_oxqyQoi2EeaNZ_U0Oe9OTQ" sourceX="-170" targetX="-594" targetY="338"/>
+    <bendpoints xmi:id="_oxqyQ4i2EeaNZ_U0Oe9OTQ" sourceX="-170" sourceY="-338" targetX="-594"/>
+    <stereotypes xmi:id="_Myg_xYi2EeaNZ_U0Oe9OTQ" name="Reference">
+      <modelElement href="bostonMetroV0.3.uml#_LmpCgIi2EeaNZ_U0Oe9OTQ"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Myg_woi2EeaNZ_U0Oe9OTQ" text="">
+      <visualProperties xmi:id="_M_RCUIi2EeaNZ_U0Oe9OTQ" position="-19.00000000000003,134.0000000000001"/>
+    </nameVisual>
+    <sourceRole xmi:id="_Myg_w4i2EeaNZ_U0Oe9OTQ" aggregationKind="NONE" name="">
+      <modelElement href="bostonMetroV0.3.uml#_Lmn0Yoi2EeaNZ_U0Oe9OTQ"/>
+      <visualProperties xmi:id="_M_QbQIi2EeaNZ_U0Oe9OTQ" position="-20.0,3.0"/>
+      <visibility xmi:id="_Myi09Yi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_Myi09Ii2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Myg_xIi2EeaNZ_U0Oe9OTQ" aggregationKind="NONE" name="outboundStation" navigable="true">
+      <modelElement href="bostonMetroV0.3.uml#_LmLvgYi2EeaNZ_U0Oe9OTQ"/>
+      <visualProperties xmi:id="_M_RCUYi2EeaNZ_U0Oe9OTQ" position="-548.0000000000001,3.0"/>
+      <visibility xmi:id="_Myi094i2EeaNZ_U0Oe9OTQ" label="-"/>
+      <cardinality xmi:id="_Myi09oi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_MyB3kIi2EeaNZ_U0Oe9OTQ" sourceAnchor="303.0,0.0" targetAnchor="69.0,97.0" dashed="true" superClass="_MtEfEIi2EeaNZ_U0Oe9OTQ" subClass="_MykqIIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_LmAJUIi2EeaNZ_U0Oe9OTQ"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MtyQwIi2EeaNZ_U0Oe9OTQ" sourceConnectionVisual="_MuFywIi2EeaNZ_U0Oe9OTQ" text="This class reads a text description of a metro subway system&#xD;&#xA;     * and generates a graph representation of the metro.&#xD;&#xA;     *&#xD;&#xA;     * Students should feel free to modify this code as needed&#xD;&#xA;     *  to complete this exercise.&#xD;&#xA;     *&#xD;&#xA;     *&lt;p>&#xD;&#xA;     *&#xD;&#xA;     * The grammar for the file is described below in BNF. A typical line&#xD;&#xA;     * in the file looks like this :&#xD;&#xA;     *&#xD;&#xA;     * &lt;code> 20 NorthStation   Green 19 22  Orange 15 22  &lt;/code>&#xD;&#xA;     *&#xD;&#xA;     * where :&#xD;&#xA;     *         20 is the StationID&#xD;&#xA;     *         NorthStation is the StationName&#xD;&#xA;     *         Green 19 22&#xD;&#xA;     *                  Green is the LineName&#xD;&#xA;     *                  19 is the StationID of the outbound station&#xD;&#xA;     *                  22 is the StationID of the inbound station&#xD;&#xA;     *         Orange 15 22 is a LineID in which :&#xD;&#xA;     *                  Orange is the LineName&#xD;&#xA;     *                  15 is the StationID of the outbound station&#xD;&#xA;     *                  22 is the StationID of the inbound station&#xD;&#xA;     *&#xD;&#xA;     *         Therefore, NorthStation has two outgoing lines.&#xD;&#xA;     *&#xD;&#xA;     *  note : 0 denotes the end of a line : i.e. in this case,&#xD;&#xA;     *  OakGrove would be at the end of the line, as there is no other outbound &#xD;&#xA;     *  station.&#xD;&#xA;     *&#xD;&#xA;     *&lt;p>&#xD;&#xA;     * metro-map ::= station-spec* &lt;BR>&#xD;&#xA;     * station-spec ::= station-id station-name station-line+ &lt;BR>&#xD;&#xA;     * station-id ::= (positive integer) &lt;BR>&#xD;&#xA;     * station-name ::= string &lt;BR>&#xD;&#xA;     * station-line ::= line-name station-id station-id &lt;BR>&#xD;&#xA;     *" item="_MuKEMIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_LmZx8Ii2EeaNZ_U0Oe9OTQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_MuHA4Ii2EeaNZ_U0Oe9OTQ" sourceConnectionVisual="_MuHA4Yi2EeaNZ_U0Oe9OTQ" text="@effects: parses the file, and generates a graph from it, unless there&#xD;&#xA;     * is a problem reading the file, or there is a problem with the format of the&#xD;&#xA;     * file.&#xD;&#xA;     *&#xD;&#xA;     * @throws java.io.IOException if there is a problem reading the file &#xD;&#xA;     * @throws ex3.BadFileException if there is a problem with the format of the file&#xD;&#xA;     *&#xD;&#xA;     * @returns the Graph generated by the file" item="_MuKEOIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_LmZx8Yi2EeaNZ_U0Oe9OTQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_MrUyoIi2EeaNZ_U0Oe9OTQ" name="App">
+    <modelElement href="bostonMetroV0.3.uml#_LjNUAIi2EeaNZ_U0Oe9OTQ"/>
+    <visualProperties xmi:id="_MrUyoYi2EeaNZ_U0Oe9OTQ" position="68.0,844.0" size="204.0,80.0"/>
+    <visibility xmi:id="_MrUyooi2EeaNZ_U0Oe9OTQ" label="+"/>
+    <operations xmi:id="_MrUyo4i2EeaNZ_U0Oe9OTQ" name="main" staticOperation="true">
+      <modelElement href="bostonMetroV0.3.uml#_LjQ-YIi2EeaNZ_U0Oe9OTQ"/>
+      <visibility xmi:id="_MrUypIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MrUypYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_MrUypoi2EeaNZ_U0Oe9OTQ" name="args">
+        <modelElement href="bostonMetroV0.3.uml#_LjRlcIi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_MrUyp4i2EeaNZ_U0Oe9OTQ" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_MrUyqIi2EeaNZ_U0Oe9OTQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_MsAIEIi2EeaNZ_U0Oe9OTQ" name="BadFileException">
+    <modelElement href="bostonMetroV0.3.uml#_LjSzkIi2EeaNZ_U0Oe9OTQ"/>
+    <visualProperties xmi:id="_MsAIEYi2EeaNZ_U0Oe9OTQ" position="508.0,691.0" size="363.0,99.0"/>
+    <visibility xmi:id="_MsAIEoi2EeaNZ_U0Oe9OTQ" label="+"/>
+    <operations xmi:id="_MsAIE4i2EeaNZ_U0Oe9OTQ" name="BadFileException">
+      <modelElement href="bostonMetroV0.3.uml#_LjTaoIi2EeaNZ_U0Oe9OTQ"/>
+      <keywords xmi:id="_MsAIFIi2EeaNZ_U0Oe9OTQ" keyword="create"/>
+      <visibility xmi:id="_MsAIFYi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MsAIFoi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MsAIF4i2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_LjUBsoi2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_MsAIGIi2EeaNZ_U0Oe9OTQ" name="BadFileException">
+          <modelElement href="bostonMetroV0.3.uml#_LjSzkIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_MsAIGYi2EeaNZ_U0Oe9OTQ" name="BadFileException">
+      <modelElement href="bostonMetroV0.3.uml#_LjUowIi2EeaNZ_U0Oe9OTQ"/>
+      <keywords xmi:id="_MsAIGoi2EeaNZ_U0Oe9OTQ" keyword="create"/>
+      <visibility xmi:id="_MsAIG4i2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MsAIHIi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MsAIHYi2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_LjVP0oi2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_MsAIHoi2EeaNZ_U0Oe9OTQ" name="BadFileException">
+          <modelElement href="bostonMetroV0.3.uml#_LjSzkIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MsAIH4i2EeaNZ_U0Oe9OTQ" name="message">
+        <modelElement href="bostonMetroV0.3.uml#_LjUowYi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_MsAIIIi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_MsAIIYi2EeaNZ_U0Oe9OTQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_MtXaAIi2EeaNZ_U0Oe9OTQ" name="GraphInterface" subclassedBy="_MwrMsIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_LjZhQIi2EeaNZ_U0Oe9OTQ"/>
+    <visualProperties xmi:id="_MtXaAYi2EeaNZ_U0Oe9OTQ" position="931.0,31.0" size="531.0,173.0"/>
+    <visibility xmi:id="_MtXaAoi2EeaNZ_U0Oe9OTQ" label="+"/>
+    <operations xmi:id="_MtXaA4i2EeaNZ_U0Oe9OTQ" name="getNodeById">
+      <modelElement href="bostonMetroV0.3.uml#_LjavYIi2EeaNZ_U0Oe9OTQ"/>
+      <visibility xmi:id="_MtXaBIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MtXaBYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MtXaBoi2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_LlwRsIi2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_MtXaB4i2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MtXaCIi2EeaNZ_U0Oe9OTQ" name="id">
+        <modelElement href="bostonMetroV0.3.uml#_LjbWcIi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_MtXaCYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_MtXaCoi2EeaNZ_U0Oe9OTQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_MtXaC4i2EeaNZ_U0Oe9OTQ" name="getNodeByName">
+      <modelElement href="bostonMetroV0.3.uml#_Ljb9gIi2EeaNZ_U0Oe9OTQ"/>
+      <visibility xmi:id="_MtXaDIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MtXaDYi2EeaNZ_U0Oe9OTQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_MtXaDoi2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_LjckkYi2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_MtXaD4i2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MtXaEIi2EeaNZ_U0Oe9OTQ" name="name">
+        <modelElement href="bostonMetroV0.3.uml#_LjckkIi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_MtXaEYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_MtXaEoi2EeaNZ_U0Oe9OTQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_MtXaE4i2EeaNZ_U0Oe9OTQ" name="addNode">
+      <modelElement href="bostonMetroV0.3.uml#_LlucgIi2EeaNZ_U0Oe9OTQ"/>
+      <visibility xmi:id="_MtXaFIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MtXaFYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_MtXaFoi2EeaNZ_U0Oe9OTQ" name="inputNode">
+        <modelElement href="bostonMetroV0.3.uml#_LlucgYi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_MtXaF4i2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_MtXaGIi2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_MtXaGYi2EeaNZ_U0Oe9OTQ" name="addEdge">
+      <modelElement href="bostonMetroV0.3.uml#_LlvDkIi2EeaNZ_U0Oe9OTQ"/>
+      <visibility xmi:id="_MtXaGoi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MtXaG4i2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_MtXaHIi2EeaNZ_U0Oe9OTQ" name="edge">
+        <modelElement href="bostonMetroV0.3.uml#_LlvDkYi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_MtXaHYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_MtXaHoi2EeaNZ_U0Oe9OTQ" name="EdgeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_LjV24Ii2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_MtXaH4i2EeaNZ_U0Oe9OTQ" name="getPath">
+      <modelElement href="bostonMetroV0.3.uml#_LlvqoIi2EeaNZ_U0Oe9OTQ"/>
+      <visibility xmi:id="_MtXaIIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MtXaIYi2EeaNZ_U0Oe9OTQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_MtXaIoi2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_Llvqo4i2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_MtXaI4i2EeaNZ_U0Oe9OTQ" name="EdgeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_LjV24Ii2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MtXaJIi2EeaNZ_U0Oe9OTQ" name="startStation">
+        <modelElement href="bostonMetroV0.3.uml#_LlvqoYi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_MtXaJYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_MtXaJoi2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_MtXaJ4i2EeaNZ_U0Oe9OTQ" name="endStation">
+        <modelElement href="bostonMetroV0.3.uml#_Llvqooi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_MtXaKIi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_MtXaKYi2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_MuKEMIi2EeaNZ_U0Oe9OTQ" comments="_MtyQwIi2EeaNZ_U0Oe9OTQ" targetConnectionVisual="_MuFywIi2EeaNZ_U0Oe9OTQ" name="MetroMapParser" associationsOut="_MuJdIIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_LjgO8Ii2EeaNZ_U0Oe9OTQ"/>
+    <visualProperties xmi:id="_MuKEMYi2EeaNZ_U0Oe9OTQ" position="62.0,688.0" size="399.0,106.0"/>
+    <visibility xmi:id="_MuKEMoi2EeaNZ_U0Oe9OTQ" label="+"/>
+    <attributes xmi:id="_MuKEM4i2EeaNZ_U0Oe9OTQ" name="fileInput">
+      <modelElement href="bostonMetroV0.3.uml#_LmGP8Ii2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_MuKENIi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_LmG3AIi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_MuKENYi2EeaNZ_U0Oe9OTQ" label="-"/>
+      <cardinality xmi:id="_MuKENoi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <type xmi:id="_MuKEN4i2EeaNZ_U0Oe9OTQ" name="BufferedReader">
+        <modelElement href="bostonMetroV0.3.uml#_LlwRsYi2EeaNZ_U0Oe9OTQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_MuKEOIi2EeaNZ_U0Oe9OTQ" comments="_MuHA4Ii2EeaNZ_U0Oe9OTQ" targetConnectionVisual="_MuHA4Yi2EeaNZ_U0Oe9OTQ" name="generateGraphFromFile">
+      <modelElement href="bostonMetroV0.3.uml#_LjhdEIi2EeaNZ_U0Oe9OTQ"/>
+      <visibility xmi:id="_MuKEOYi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MuKEOoi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MuKEO4i2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_Ll0jIIi2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_MuKEPIi2EeaNZ_U0Oe9OTQ" name="GraphInterface">
+          <modelElement href="bostonMetroV0.3.uml#_LjZhQIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MuKEPYi2EeaNZ_U0Oe9OTQ" name="filename">
+        <modelElement href="bostonMetroV0.3.uml#_LjhdEYi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_MuKEPoi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_MuKEP4i2EeaNZ_U0Oe9OTQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_MudmMIi2EeaNZ_U0Oe9OTQ" name="NodeInterface" associationsIn="_Ms8jQIi2EeaNZ_U0Oe9OTQ _MtD4AIi2EeaNZ_U0Oe9OTQ _Mv7l0Ii2EeaNZ_U0Oe9OTQ _MxZlcIi2EeaNZ_U0Oe9OTQ _Mx3fgIi2EeaNZ_U0Oe9OTQ" subclassedBy="_MvFRQIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+    <visualProperties xmi:id="_MudmMYi2EeaNZ_U0Oe9OTQ" position="679.0,159.0" size="177.0,123.0"/>
+    <visibility xmi:id="_MudmMoi2EeaNZ_U0Oe9OTQ" label="+"/>
+    <attributes xmi:id="_MudmM4i2EeaNZ_U0Oe9OTQ" name="iD">
+      <modelElement href="bostonMetroV0.3.uml#_LjkgYoi2EeaNZ_U0Oe9OTQ"/>
+      <visibility xmi:id="_MudmNIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MudmNYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <type xmi:id="_MudmNoi2EeaNZ_U0Oe9OTQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_MudmN4i2EeaNZ_U0Oe9OTQ" name="getName">
+      <modelElement href="bostonMetroV0.3.uml#_LjkgYIi2EeaNZ_U0Oe9OTQ"/>
+      <visibility xmi:id="_MudmOIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MudmOYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MudmOoi2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_LjkgYYi2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_MudmO4i2EeaNZ_U0Oe9OTQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_MvdrwIi2EeaNZ_U0Oe9OTQ" name="Station" generalizations="_MvFRQIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_LjlHcIi2EeaNZ_U0Oe9OTQ"/>
+    <visualProperties xmi:id="_MvdrwYi2EeaNZ_U0Oe9OTQ" position="885.0,295.0" size="285.0,163.0"/>
+    <visibility xmi:id="_Mvdrwoi2EeaNZ_U0Oe9OTQ" label="+"/>
+    <attributes xmi:id="_Mvdrw4i2EeaNZ_U0Oe9OTQ" name="id">
+      <modelElement href="bostonMetroV0.3.uml#_LmHeEIi2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_MvdrxIi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_LmHeEYi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_MvdrxYi2EeaNZ_U0Oe9OTQ" label="-"/>
+      <cardinality xmi:id="_Mvdrxoi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <type xmi:id="_Mvdrx4i2EeaNZ_U0Oe9OTQ" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_MvdryIi2EeaNZ_U0Oe9OTQ" name="name">
+      <modelElement href="bostonMetroV0.3.uml#_LmIFIIi2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_MvdryYi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_LmIFIYi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Mvdryoi2EeaNZ_U0Oe9OTQ" label="-"/>
+      <cardinality xmi:id="_Mvdry4i2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <type xmi:id="_MvdrzIi2EeaNZ_U0Oe9OTQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_MvdrzYi2EeaNZ_U0Oe9OTQ" name="Station">
+      <modelElement href="bostonMetroV0.3.uml#_LjmVkIi2EeaNZ_U0Oe9OTQ"/>
+      <keywords xmi:id="_Mvdrzoi2EeaNZ_U0Oe9OTQ" keyword="create"/>
+      <visibility xmi:id="_Mvdrz4i2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_Mvdr0Ii2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Mvdr0Yi2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_Ljm8oYi2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_Mvdr0oi2EeaNZ_U0Oe9OTQ" name="Station">
+          <modelElement href="bostonMetroV0.3.uml#_LjlHcIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Mvdr04i2EeaNZ_U0Oe9OTQ" name="id">
+        <modelElement href="bostonMetroV0.3.uml#_LjmVkYi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_Mvdr1Ii2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_Mvdr1Yi2EeaNZ_U0Oe9OTQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Mvdr1oi2EeaNZ_U0Oe9OTQ" name="name">
+        <modelElement href="bostonMetroV0.3.uml#_LjmVkoi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_Mvdr14i2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_Mvdr2Ii2EeaNZ_U0Oe9OTQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Mvdr2Yi2EeaNZ_U0Oe9OTQ" name="getName">
+      <modelElement href="bostonMetroV0.3.uml#_Ljm8ooi2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_Mvdr2oi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_LjnjsYi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Mvdr24i2EeaNZ_U0Oe9OTQ" name="Annotations">
+        <modelElement href="bostonMetroV0.3.uml#_Ljox0Ii2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Mvdr3Ii2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_Mvdr3Yi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Mvdr3oi2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_LjnjsIi2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_Mvdr34i2EeaNZ_U0Oe9OTQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Mvdr4Ii2EeaNZ_U0Oe9OTQ" name="getID">
+      <modelElement href="bostonMetroV0.3.uml#_LjrOEYi2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_Mvdr4Yi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_LjscMIi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Mvdr4oi2EeaNZ_U0Oe9OTQ" name="Annotations">
+        <modelElement href="bostonMetroV0.3.uml#_LjtDQIi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Mvdr44i2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_Mvdr5Ii2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Mvdr5Yi2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_Ljr1IIi2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_Mvdr5oi2EeaNZ_U0Oe9OTQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Mw7EUIi2EeaNZ_U0Oe9OTQ" name="Subway" associationsOut="_Mv7l0Ii2EeaNZ_U0Oe9OTQ _MwaG8Ii2EeaNZ_U0Oe9OTQ" generalizations="_MwrMsIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_LjuRYIi2EeaNZ_U0Oe9OTQ"/>
+    <visualProperties xmi:id="_Mw7EUYi2EeaNZ_U0Oe9OTQ" position="907.0,471.0" size="554.0,175.0"/>
+    <visibility xmi:id="_Mw7EUoi2EeaNZ_U0Oe9OTQ" label="+"/>
+    <attributes xmi:id="_Mw7EU4i2EeaNZ_U0Oe9OTQ" name="allNodes">
+      <modelElement href="bostonMetroV0.3.uml#_LmIsMIi2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_Mw7EVIi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_LmIsMoi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Mw7EVYi2EeaNZ_U0Oe9OTQ" label="-"/>
+      <cardinality xmi:id="_Mw7EVoi2EeaNZ_U0Oe9OTQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_Mw7EV4i2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+        <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Mw7EWIi2EeaNZ_U0Oe9OTQ" name="allEdges">
+      <modelElement href="bostonMetroV0.3.uml#_LmJTQIi2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_Mw7EWYi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_LmJTQoi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Mw7EWoi2EeaNZ_U0Oe9OTQ" label="-"/>
+      <cardinality xmi:id="_Mw7EW4i2EeaNZ_U0Oe9OTQ" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_Mw7EXIi2EeaNZ_U0Oe9OTQ" name="EdgeInterface">
+        <modelElement href="bostonMetroV0.3.uml#_LjV24Ii2EeaNZ_U0Oe9OTQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Mw7EXYi2EeaNZ_U0Oe9OTQ" name="Subway">
+      <modelElement href="bostonMetroV0.3.uml#_LjvfgIi2EeaNZ_U0Oe9OTQ"/>
+      <keywords xmi:id="_Mw7EXoi2EeaNZ_U0Oe9OTQ" keyword="create"/>
+      <visibility xmi:id="_Mw7EX4i2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_Mw7EYIi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Mw7EYYi2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_LjwGkoi2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_Mw7EYoi2EeaNZ_U0Oe9OTQ" name="Subway">
+          <modelElement href="bostonMetroV0.3.uml#_LjuRYIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Mw7EY4i2EeaNZ_U0Oe9OTQ" name="getNodeById">
+      <modelElement href="bostonMetroV0.3.uml#_LjwtoIi2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_Mw7EZIi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_LjxUsYi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Mw7EZYi2EeaNZ_U0Oe9OTQ" name="Annotations">
+        <modelElement href="bostonMetroV0.3.uml#_Ljx7wIi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Mw7EZoi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_Mw7EZ4i2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Mw7EaIi2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_Ll_iQoi2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_Mw7EaYi2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Mw7Eaoi2EeaNZ_U0Oe9OTQ" name="id">
+        <modelElement href="bostonMetroV0.3.uml#_LjxUsIi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_Mw7Ea4i2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_Mw7EbIi2EeaNZ_U0Oe9OTQ" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Mw7EbYi2EeaNZ_U0Oe9OTQ" name="getNodeByName">
+      <modelElement href="bostonMetroV0.3.uml#_Ljyi0Ii2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_Mw7Eboi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_Ljzw8Ii2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Mw7Eb4i2EeaNZ_U0Oe9OTQ" name="Annotations">
+        <modelElement href="bostonMetroV0.3.uml#_Ljzw8Yi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Mw7EcIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_Mw7EcYi2EeaNZ_U0Oe9OTQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_Mw7Ecoi2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_LjzJ4Ii2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_Mw7Ec4i2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Mw7EdIi2EeaNZ_U0Oe9OTQ" name="name">
+        <modelElement href="bostonMetroV0.3.uml#_Ljyi0Yi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_Mw7EdYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_Mw7Edoi2EeaNZ_U0Oe9OTQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Mw7Ed4i2EeaNZ_U0Oe9OTQ" name="addNode">
+      <modelElement href="bostonMetroV0.3.uml#_Ll734Ii2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_Mw7EeIi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_Ll8e8Ii2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Mw7EeYi2EeaNZ_U0Oe9OTQ" name="Annotations">
+        <modelElement href="bostonMetroV0.3.uml#_Ll9GAIi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Mw7Eeoi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_Mw7Ee4i2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Mw7EfIi2EeaNZ_U0Oe9OTQ" name="inputNode">
+        <modelElement href="bostonMetroV0.3.uml#_Ll734Yi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_Mw7EfYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_Mw7Efoi2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Mw7Ef4i2EeaNZ_U0Oe9OTQ" name="addEdge">
+      <modelElement href="bostonMetroV0.3.uml#_Ll9tEIi2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_Mw7EgIi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_Ll9tEoi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Mw7EgYi2EeaNZ_U0Oe9OTQ" name="Annotations">
+        <modelElement href="bostonMetroV0.3.uml#_Ll-UIIi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Mw7Egoi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_Mw7Eg4i2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Mw7EhIi2EeaNZ_U0Oe9OTQ" name="edge">
+        <modelElement href="bostonMetroV0.3.uml#_Ll9tEYi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_Mw7EhYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_Mw7Ehoi2EeaNZ_U0Oe9OTQ" name="EdgeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_LjV24Ii2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Mw7Eh4i2EeaNZ_U0Oe9OTQ" name="getPath">
+      <modelElement href="bostonMetroV0.3.uml#_Ll-UIoi2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_Mw7EiIi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_Ll-7Moi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Mw7EiYi2EeaNZ_U0Oe9OTQ" name="Annotations">
+        <modelElement href="bostonMetroV0.3.uml#_Ll_iQIi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_Mw7Eioi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_Mw7Ei4i2EeaNZ_U0Oe9OTQ" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_Mw7EjIi2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_Ll-7MIi2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_Mw7EjYi2EeaNZ_U0Oe9OTQ" name="EdgeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_LjV24Ii2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Mw7Ejoi2EeaNZ_U0Oe9OTQ" name="startStation">
+        <modelElement href="bostonMetroV0.3.uml#_Ll-UI4i2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_Mw7Ej4i2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_Mw7EkIi2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Mw7EkYi2EeaNZ_U0Oe9OTQ" name="endStation">
+        <modelElement href="bostonMetroV0.3.uml#_Ll-UJIi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_Mw7Ekoi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_Mw7Ek4i2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_MykqIIi2EeaNZ_U0Oe9OTQ" name="Track" associationsOut="_MxZlcIi2EeaNZ_U0Oe9OTQ _Mx3fgIi2EeaNZ_U0Oe9OTQ" generalizations="_MyB3kIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_Lj53kIi2EeaNZ_U0Oe9OTQ"/>
+    <visualProperties xmi:id="_MykqIYi2EeaNZ_U0Oe9OTQ" position="255.0,487.0" size="583.0,144.0"/>
+    <visibility xmi:id="_MykqIoi2EeaNZ_U0Oe9OTQ" label="+"/>
+    <attributes xmi:id="_MykqI4i2EeaNZ_U0Oe9OTQ" name="name">
+      <modelElement href="bostonMetroV0.3.uml#_LmJ6UIi2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_MykqJIi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_LmJ6UYi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_MykqJYi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MykqJoi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <type xmi:id="_MykqJ4i2EeaNZ_U0Oe9OTQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_MykqKIi2EeaNZ_U0Oe9OTQ" name="inboundStation">
+      <modelElement href="bostonMetroV0.3.uml#_LmLIcoi2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_MykqKYi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_LmLvgIi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_MykqKoi2EeaNZ_U0Oe9OTQ" label="-"/>
+      <cardinality xmi:id="_MykqK4i2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <type xmi:id="_MykqLIi2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+        <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_MykqLYi2EeaNZ_U0Oe9OTQ" name="outboundStation">
+      <modelElement href="bostonMetroV0.3.uml#_LmLvgYi2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_MykqLoi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_LmLvgoi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_MykqL4i2EeaNZ_U0Oe9OTQ" label="-"/>
+      <cardinality xmi:id="_MykqMIi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <type xmi:id="_MykqMYi2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+        <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_MykqMoi2EeaNZ_U0Oe9OTQ" name="getInboundNode">
+      <modelElement href="bostonMetroV0.3.uml#_Lj8T0Ii2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_MykqM4i2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_Lj864Ii2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_MykqNIi2EeaNZ_U0Oe9OTQ" name="Annotations">
+        <modelElement href="bostonMetroV0.3.uml#_Lj864Yi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_MykqNYi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MykqNoi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MykqN4i2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_LmBXcoi2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_MykqOIi2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_MykqOYi2EeaNZ_U0Oe9OTQ" name="getOutboundNode">
+      <modelElement href="bostonMetroV0.3.uml#_Lj9h8Ii2EeaNZ_U0Oe9OTQ"/>
+      <stereotypes xmi:id="_MykqOoi2EeaNZ_U0Oe9OTQ" name="LegacyStyledElement">
+        <modelElement href="bostonMetroV0.3.uml#_Lj-JAIi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_MykqO4i2EeaNZ_U0Oe9OTQ" name="Annotations">
+        <modelElement href="bostonMetroV0.3.uml#_Lj-wEIi2EeaNZ_U0Oe9OTQ"/>
+      </stereotypes>
+      <visibility xmi:id="_MykqPIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MykqPYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MykqPoi2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_LmBXc4i2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_MykqP4i2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_MykqQIi2EeaNZ_U0Oe9OTQ" name="Track">
+      <modelElement href="bostonMetroV0.3.uml#_LmAwYIi2EeaNZ_U0Oe9OTQ"/>
+      <keywords xmi:id="_MykqQYi2EeaNZ_U0Oe9OTQ" keyword="create"/>
+      <visibility xmi:id="_MykqQoi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MykqQ4i2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_MykqRIi2EeaNZ_U0Oe9OTQ">
+        <modelElement href="bostonMetroV0.3.uml#_LmBXcYi2EeaNZ_U0Oe9OTQ"/>
+        <type xmi:id="_MykqRYi2EeaNZ_U0Oe9OTQ" name="Track">
+          <modelElement href="bostonMetroV0.3.uml#_Lj53kIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_MykqRoi2EeaNZ_U0Oe9OTQ" name="name">
+        <modelElement href="bostonMetroV0.3.uml#_LmAwYYi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_MykqR4i2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_MykqSIi2EeaNZ_U0Oe9OTQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_MykqSYi2EeaNZ_U0Oe9OTQ" name="inboundStation">
+        <modelElement href="bostonMetroV0.3.uml#_LmAwYoi2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_MykqSoi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_MykqS4i2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_MykqTIi2EeaNZ_U0Oe9OTQ" name="outboundStation">
+        <modelElement href="bostonMetroV0.3.uml#_LmAwY4i2EeaNZ_U0Oe9OTQ"/>
+        <cardinality xmi:id="_MykqTYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+        <type xmi:id="_MykqToi2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+          <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_MtEfEIi2EeaNZ_U0Oe9OTQ" name="EdgeInterface" associationsIn="_MwaG8Ii2EeaNZ_U0Oe9OTQ" associationsOut="_Ms8jQIi2EeaNZ_U0Oe9OTQ _MtD4AIi2EeaNZ_U0Oe9OTQ" subclassedBy="_MyB3kIi2EeaNZ_U0Oe9OTQ">
+    <modelElement href="bostonMetroV0.3.uml#_LjV24Ii2EeaNZ_U0Oe9OTQ"/>
+    <visualProperties xmi:id="_MtEfEYi2EeaNZ_U0Oe9OTQ" position="489.0,314.0" size="139.0,97.0"/>
+    <visibility xmi:id="_MtEfEoi2EeaNZ_U0Oe9OTQ" label="+"/>
+    <attributes xmi:id="_MtEfE4i2EeaNZ_U0Oe9OTQ" name="name">
+      <modelElement href="bostonMetroV0.3.uml#_LjWd8Ii2EeaNZ_U0Oe9OTQ"/>
+      <visibility xmi:id="_MtEfFIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MtEfFYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <type xmi:id="_MtEfFoi2EeaNZ_U0Oe9OTQ" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_MtEfF4i2EeaNZ_U0Oe9OTQ" name="inboundNode">
+      <modelElement href="bostonMetroV0.3.uml#_LjXFAIi2EeaNZ_U0Oe9OTQ"/>
+      <visibility xmi:id="_MtEfGIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MtEfGYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <type xmi:id="_MtEfGoi2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+        <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_MtEfG4i2EeaNZ_U0Oe9OTQ" name="outboundNode">
+      <modelElement href="bostonMetroV0.3.uml#_LjYTIIi2EeaNZ_U0Oe9OTQ"/>
+      <visibility xmi:id="_MtEfHIi2EeaNZ_U0Oe9OTQ" label="+"/>
+      <cardinality xmi:id="_MtEfHYi2EeaNZ_U0Oe9OTQ" label="1" max="1" min="1"/>
+      <type xmi:id="_MtEfHoi2EeaNZ_U0Oe9OTQ" name="NodeInterface">
+        <modelElement href="bostonMetroV0.3.uml#_Ljj5UIi2EeaNZ_U0Oe9OTQ"/>
+      </type>
+    </attributes>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

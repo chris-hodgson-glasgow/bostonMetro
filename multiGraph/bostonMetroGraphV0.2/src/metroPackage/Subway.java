@@ -14,4 +14,10 @@ public class Subway implements GraphInterface {
 		return null;
 	}
 
+	@Override
+	public int[] getNeighbours(int id, String line) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
