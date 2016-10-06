@@ -15,7 +15,7 @@ public class App {
 		destenation =input.next();
 		//make graph by using MetroMapPraser
 		//pass destination and start to Searching algorithm
-		System.out.println(destenation + start);
+		input.close();
 	}
 
 
