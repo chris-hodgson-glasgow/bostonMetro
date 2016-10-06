@@ -34,7 +34,7 @@ public class Track {
      * @return the first station connected to this track
      */
     public Station getStationA(){
-        return (track.getNodeA());
+        return null;
     }
 
     /**
@@ -42,7 +42,7 @@ public class Track {
      * @return the second station connected to this track
      */
     public Station getStationB(){
-        return (track.getNodeB());
+        return null;
     }
 
     /**
