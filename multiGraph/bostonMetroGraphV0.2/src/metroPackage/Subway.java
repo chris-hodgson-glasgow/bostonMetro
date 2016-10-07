@@ -26,11 +26,11 @@ class Subway {
     }
 
     public HashMap<Integer, INode> getStationList(){
-        return (subway.getNodeList());
+        return (stations);
     }
 
     public ArrayList<IEdge> getTrackList(){
-        return (subway.getEdgeList());
+        return (tracks);
     }
 
     private String getTrackColor(int id){
