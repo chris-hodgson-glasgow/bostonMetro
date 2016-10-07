@@ -1,11 +1,24 @@
 package metroPackage;
 
-public interface Node {
+import java.util.ArrayList;
+import java.util.Arrays;
 
-	public String getName();
+public class Node implements INode {
+
+	private int id;
+	private String name;
 	
-	public String[] getNeighbours(String edge);
-	
-	
-	
+	Node(int id, String name){
+		this.id = id;
+		this.name = name;
+	}
+
+	public String getName() {
+		return (name);
+	}
+
+	public int getId(){
+		return (id);
+	}
+
 }

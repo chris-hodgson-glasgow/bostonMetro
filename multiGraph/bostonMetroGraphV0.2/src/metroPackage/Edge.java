@@ -1,40 +1,39 @@
 package metroPackage;
 
-public interface Edge {
+public class Edge implements IEdge{
 
-	/**
-	 * Gets the edge id.
-	 * @return the Edge id
-	 */
-	public int getId();
+    private String label;
+    private int nodeAId;
+    private int nodeBId;
+    /**
+     * Constructor setting up initial values
+     * @param nodeAId  First station connected to this track
+     * @param nodeBId  Second station connected to this track
+     */
+    public Edge(String label, int nodeAId, int nodeBId){
+        this.label = label;
+        this.nodeAId = nodeAId;
+        this.nodeBId = nodeBId;
+    }
 
-	/**
-	 * Gets first adjacent node
-	 * @return The Node with matching id
-	 */
-	public Node getNodeA();
+    public String getLabel(){
+        return (label);
+    }
 
-	/**
-	 * Gets second adjacent node
-	 * @return The Node with matching id
-	 */
-	public Node getNodeB();
+    /**
+     * Gets the first station connected to this track
+     * @return the first station connected to this track
+     */
+    public int getNodeAId(){
+        return (nodeAId);
+    }
 
-	/**
-	 * Sets the id of this edge
-	 * @param id id to set
-	 */
-	public void setId(int id);
+    /**
+     * Gets the second station connected to this track
+     * @return the second station connected to this track
+     */
+    public int getNodeBId(){
+        return (nodeBId);
+    }
 
-	/**
-	 * Sets the first adjacent node on this edge
-	 * @param nodeA Node to set as first adjacent node
-	 */
-	public void setNodeA(Node nodeA);
-
-	/**
-	 * Sets the second adjacent node on this edge
-	 * @param nodeB Node to set as second adjacent node
-	 */
-	public void setNodeB(Node nodeB);
 }
