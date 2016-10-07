@@ -1,6 +1,6 @@
 package metroPackage;
 
-public interface Node {
+public interface INode {
 
 	public String getName();
 	

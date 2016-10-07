@@ -2,7 +2,7 @@ package metroPackage;
 
 import java.util.Arrays;
 
-public class Station implements Node {
+public class Station implements INode {
 
 	private int id;
 	private String name;
@@ -25,15 +25,15 @@ public class Station implements Node {
 	}
 
 	public String getName() {
-		
+
 		return name;
 	}
 
 
 	public String[] getNeighbours(String edge) {
-		
+
 		String[] neighbourHolder = new String[2];
-		
+
 		for(int i = 0; i < 4; i++)
 		{
 				if(neighbours[i][0] == edge)
@@ -42,7 +42,7 @@ public class Station implements Node {
 					neighbourHolder[1] = neighbours[i][2];
 				}
 		}
-		
+
 		if(Arrays.deepEquals(neighbourHolder, testEmptyArray))
 		{
 			return null;
@@ -50,8 +50,8 @@ public class Station implements Node {
 		{
 			return neighbourHolder;
 		}
-		
-		
+
+
 	}
 
 }

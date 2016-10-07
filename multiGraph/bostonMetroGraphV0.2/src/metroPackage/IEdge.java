@@ -1,6 +1,6 @@
 package metroPackage;
 
-public interface Edge {
+public interface IEdge {
 
 	/**
 	 * Gets the edge id.
@@ -12,13 +12,13 @@ public interface Edge {
 	 * Gets first adjacent node
 	 * @return The Node with matching id
 	 */
-	public Node getNodeA();
+	public INode getNodeA();
 
 	/**
 	 * Gets second adjacent node
 	 * @return The Node with matching id
 	 */
-	public Node getNodeB();
+	public 	INode getNodeB();
 
 	/**
 	 * Sets the id of this edge
@@ -27,14 +27,14 @@ public interface Edge {
 	public void setId(int id);
 
 	/**
-	 * Sets the first adjacent node on this edge
+	 * Sets the first adjacent node on THIShis edge
 	 * @param nodeA Node to set as first adjacent node
 	 */
-	public void setNodeA(Node nodeA);
+	public void setNodeA(INode nodeA);
 
 	/**
 	 * Sets the second adjacent node on this edge
 	 * @param nodeB Node to set as second adjacent node
 	 */
-	public void setNodeB(Node nodeB);
+	public void setNodeB(INode nodeB);
 }
