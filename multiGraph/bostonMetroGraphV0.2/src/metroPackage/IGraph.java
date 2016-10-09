@@ -2,19 +2,18 @@ package metroPackage;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 interface IGraph {
 
 	void setNode(int id, String name);
 
-	void setEdge(String label, int nodeA, int nodeB);
+	void setEdge(int nodeAId, int nodeBId);
 
 	INode getNode(String name);
 
-	HashMap<Integer, INode> getNodeList();
+	public ArrayList<INode> getNeighbours(INode node);
 
-	ArrayList<IEdge> getEdgeList();
-
-	ArrayList<String> getPath(INode src, INode dest);
+	public List<INode> getPath(INode src, INode dest);
 
 }
