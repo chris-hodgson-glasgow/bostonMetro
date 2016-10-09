@@ -32,13 +32,15 @@ class Graph implements IGraph {
         nodes.put(station.getId(), station);
     }
 
+
+
     /**
      * Adds an edge to the graph
      * @param nodeAId 	The id of the first node on this edge
      * @param nodeBId 	The id of the second node on this edge
      */
-    public void setEdge(int nodeAId, int nodeBId){
-        IEdge edge = new Track(nodeAId, nodeBId);
+    public void setEdge(String lineName int nodeAId, int nodeBId){
+        IEdge edge = new track(lineName,nodeAId, nodeBId);
         edges.add(edge);
     }
 

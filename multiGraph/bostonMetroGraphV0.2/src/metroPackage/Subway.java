@@ -26,8 +26,8 @@ class Subway {
      * @param stationAId    The id of the first station on this track
      * @param stationBId 	The id of the second stationBId on this track
      */
-    public void setTrack(int stationAId, int stationBId){
-        subway.setEdge(stationAId, stationBId);
+    public void setTrack(String linename,int stationAId, int stationBId){
+        subway.setEdge(linename,stationAId, stationBId);
     }
 
     //TODO: Account for stations with same name

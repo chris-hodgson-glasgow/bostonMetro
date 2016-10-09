@@ -17,7 +17,7 @@ interface IGraph {
 	 * @param nodeAId 	the id of the first node on this edge
 	 * @param nodeBId 	the id of the second node on this edge
 	 */
-	void setEdge(int nodeAId, int nodeBId);
+	void setEdge(String lineName ,int nodeAId, int nodeBId);
 
 	//TODO: Account for nodes with same name
 	/**
