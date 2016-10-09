@@ -1,6 +1,8 @@
 package metroPackage;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 class Subway {
     private IGraph subway;
@@ -23,21 +25,28 @@ class Subway {
 
     /**
      * Adds a track to the subway
+     * @param lineName      The line this track is on
      * @param stationAId    The id of the first station on this track
      * @param stationBId 	The id of the second stationBId on this track
      */
-    public void setTrack(String linename,int stationAId, int stationBId){
-        subway.setEdge(linename,stationAId, stationBId);
+    public void setTrack(String lineName,int stationAId, int stationBId){
+        subway.setEdge(lineName,stationAId, stationBId);
     }
 
-    //TODO: Account for stations with same name
     /**
-     * Gets a station
-     * @param name  The name of the station to get
-     * @return      The station with matching name
+     * Gets all stations in the subway
+     * @return  All stations in the subway
      */
-    public INode getStation(String name){
-        return (subway.getNode(name));
+    public Map<Integer, INode> getStationList(){
+        return (subway.getNodeList());
+    }
+
+    /**
+     * Gets all tracks in the subway
+     * @return  All tracks in the subway
+     */
+    public ArrayList<IEdge> getTrackList(){
+        return (subway.getEdgeList());
     }
 
     /**

@@ -1,22 +1,11 @@
 package metroPackage;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
-import java.util.Set;
+import java.util.*;
 
 class Graph implements IGraph {
     private Map<Integer, INode> nodes;
     private ArrayList<IEdge> edges;
 
-    /**
-     * Graph constructor initialising nodes HashMap and edges ArrayList
-     */
     Graph(){
         nodes = new HashMap<>();
         edges = new ArrayList<>();
@@ -32,32 +21,31 @@ class Graph implements IGraph {
         nodes.put(station.getId(), station);
     }
 
-
-
     /**
      * Adds an edge to the graph
+     * @param name 	The name of this line
      * @param nodeAId 	The id of the first node on this edge
      * @param nodeBId 	The id of the second node on this edge
      */
-    public void setEdge(String lineName int nodeAId, int nodeBId){
-        IEdge edge = new track(lineName,nodeAId, nodeBId);
+    public void setEdge(String name, int nodeAId, int nodeBId){
+        IEdge edge = new Track(name, nodeAId, nodeBId);
         edges.add(edge);
     }
 
-    //TODO: Account for nodes with same name
     /**
-     * Gets a node
-     * @param name	The name of the node to get
-     * @return		The node with matching name
+     * Gets all nodes in the graph
+     * @return	All nodes in the graph
      */
-    public INode getNode(String name){
-        for(int i = 1; i < nodes.size(); i++){
-            if(nodes.get(i).getName().equals(name)){
-                return (nodes.get(i));
-            }
-        }
+    public Map<Integer, INode> getNodeList(){
+        return (nodes);
+    }
 
-        return (null);
+    /**
+     * Gets all edges in the graph
+     * @return	All edges in the graph
+     */
+    public ArrayList<IEdge> getEdgeList(){
+        return (edges);
     }
 
     /**

@@ -2,30 +2,36 @@ package metroPackage;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 interface IGraph {
 
 	/**
 	 * Adds a node to the graph
-	 * @param id	the id of the node to add
-	 * @param name	the name of the node to add
+	 * @param id	The id of the node to add
+	 * @param name	The name of the node to add
 	 */
 	void setNode(int id, String name);
 
 	/**
 	 * Adds an edge to the graph
-	 * @param nodeAId 	the id of the first node on this edge
-	 * @param nodeBId 	the id of the second node on this edge
+	 * @param name 	The name of this line
+	 * @param nodeAId 	The id of the first node on this edge
+	 * @param nodeBId 	The id of the second node on this edge
 	 */
-	void setEdge(String lineName ,int nodeAId, int nodeBId);
+	void setEdge(String name, int nodeAId, int nodeBId);
 
-	//TODO: Account for nodes with same name
 	/**
-	 * Gets a node
-	 * @param name	The name of the node to get
-	 * @return		the node with matching name
+	 * Gets all nodes in the graph
+	 * @return	All nodes in the graph
 	 */
-	INode getNode(String name);
+	Map<Integer, INode> getNodeList();
+
+	/**
+	 * Gets all edges in the graph
+	 * @return	All edges in the graph
+	 */
+	ArrayList<IEdge> getEdgeList();
 
 	/**
 	 * Gets a nodes neighbours
