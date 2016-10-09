@@ -14,21 +14,40 @@ class Graph implements IGraph {
     private Map<Integer, INode> nodes;
     private ArrayList<IEdge> edges;
 
+    /**
+     * Graph constructor initialising nodes HashMap and edges ArrayList
+     */
     Graph(){
         nodes = new HashMap<>();
         edges = new ArrayList<>();
     }
 
+    /**
+     * Adds a node to the graph
+     * @param id	The id of the node to add
+     * @param name	The name of the node to add
+     */
     public void setNode(int id, String name){
         INode station = new Station(id, name);
         nodes.put(station.getId(), station);
     }
 
+    /**
+     * Adds an edge to the graph
+     * @param nodeAId 	The id of the first node on this edge
+     * @param nodeBId 	The id of the second node on this edge
+     */
     public void setEdge(int nodeAId, int nodeBId){
         IEdge edge = new Track(nodeAId, nodeBId);
         edges.add(edge);
     }
 
+    //TODO: Account for nodes with same name
+    /**
+     * Gets a node
+     * @param name	The name of the node to get
+     * @return		The node with matching name
+     */
     public INode getNode(String name){
         for(int i = 1; i < nodes.size(); i++){
             if(nodes.get(i).getName().equals(name)){
@@ -39,6 +58,11 @@ class Graph implements IGraph {
         return (null);
     }
 
+    /**
+     * Gets a nodes neighbours
+     * @param node	The node to check
+     * @return		The nodes neighbours
+     */
     public ArrayList<INode> getNeighbours(INode node){
         ArrayList<INode> neighbours = new ArrayList<>();
 
@@ -53,6 +77,12 @@ class Graph implements IGraph {
         return (neighbours);
     }
 
+    /**
+     * Gets the shortest path from source node to destination node
+     * @param src	The source node
+     * @param dest	The destination node
+     * @return		The nodes along the shortest path from src to dest
+     */
     public List<INode> getPath(INode src, INode dest){
         Set<INode> visited = new HashSet<>();
         Map<INode, INode> prev = new HashMap<>();
