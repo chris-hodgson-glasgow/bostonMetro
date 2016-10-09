@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-class Subway {
-    private IGraph subway;
+class Metro {
+    private IGraph metro;
 
     /**
-     * Subway constructor initialising subway Graph
+     * Metro constructor initialising subway Graph
      */
-    Subway(){
-        subway = new Graph();
+    Metro(){
+        metro = new Graph();
     }
 
     /**
@@ -20,7 +20,7 @@ class Subway {
      * @param name	The name of the station to add
      */
     public void setStation(int id, String name){
-        subway.setNode(id, name);
+        metro.setNode(id, name);
     }
 
     /**
@@ -30,7 +30,7 @@ class Subway {
      * @param stationBId 	The id of the second stationBId on this track
      */
     public void setTrack(String lineName,int stationAId, int stationBId){
-        subway.setEdge(lineName,stationAId, stationBId);
+        metro.setEdge(lineName,stationAId, stationBId);
     }
 
     /**
@@ -38,7 +38,7 @@ class Subway {
      * @return  All stations in the subway
      */
     public Map<Integer, INode> getStationList(){
-        return (subway.getNodeList());
+        return (metro.getNodeList());
     }
 
     /**
@@ -46,7 +46,7 @@ class Subway {
      * @return  All tracks in the subway
      */
     public ArrayList<IEdge> getTrackList(){
-        return (subway.getEdgeList());
+        return (metro.getEdgeList());
     }
 
     /**
@@ -56,6 +56,6 @@ class Subway {
      * @return      The stations along the shortest path from src to dest
      */
     public List<INode> getPath(INode src, INode dest){
-        return subway.getPath(src, dest);
+        return metro.getPath(src, dest);
     }
 }
