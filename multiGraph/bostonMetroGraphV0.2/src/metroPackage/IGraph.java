@@ -1,7 +1,6 @@
 package metroPackage;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 interface IGraph {
@@ -12,8 +11,8 @@ interface IGraph {
 
 	INode getNode(String name);
 
-	public ArrayList<INode> getNeighbours(INode node);
+	ArrayList<INode> getNeighbours(INode node);
 
-	public List<INode> getPath(INode src, INode dest);
+	List<INode> getPath(INode src, INode dest);
 
 }
