@@ -61,7 +61,7 @@ public class App {
 					stationCounter++;
 				}
 			}
-			if(!found) System.err.println("Station " + node + " was not found. Are you sure it's spelt correctly?");
+			if(!found) System.err.println("Station " + input + " was not found. Are you sure it's spelt correctly?");
 		}
 
 		if(stationCounter > 1){
