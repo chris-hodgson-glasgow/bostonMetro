@@ -6,7 +6,7 @@ public interface IEdge {
 	 * Gets the edge id.
 	 * @return the Edge id
 	 */
-	public int getId();
+	public String getlineName();
 
 	/**
 	 * Gets first adjacent node
