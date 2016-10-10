@@ -27,8 +27,10 @@ public class App {
 				System.out.println("\nNo such path exists");
 			}
 
-		} catch (IOException | BadFileException e) {
-			e.printStackTrace();
+		} catch (IOException e) {
+			System.err.println("bostonmetro.txt not found");
+		} catch (BadFileException e){
+			System.err.println("Incompatible file, must be bostonmetro.txt");
 		}
 	}
 
@@ -56,17 +58,21 @@ public class App {
 		String currentLine = getLine(path.get(0).getId(), path.get(1).getId(), edges);
 		String nextLine;
 		int sourceId = 0;
-		for(int i = 2; i < path.size() - 1; i++){
-			nextLine = getLine(path.get(i).getId(), path.get(i + 1).getId(), edges);
-			if(nextLine.equals(currentLine)){
-				if(i == path.size() - 2){
-					System.out.println("from " + path.get(sourceId).getName() + " stay on the " + currentLine + " line until you reach " + path.get(i + 1).getName());
+		if (path.size() < 2) {
+			System.out.println("Go from station " + path.get(0).getName() + " to the next stop at station ");
+		} else {
+			for (int i = 2; i < path.size() - 1; i++) {
+				nextLine = getLine(path.get(i).getId(), path.get(i + 1).getId(), edges);
+				if (nextLine.equals(currentLine)) {
+					if (i == path.size() - 2) {
+						System.out.println("from station " + path.get(sourceId).getName() + " stay on the " + currentLine + " line until you reach station " + path.get(i + 1).getName());
+					}
+				} else {
+					System.out.println("from station " + path.get(sourceId).getName() + " go to station " + path.get(i).getName() + " on " + currentLine + " line");
+					sourceId = i;
 				}
-			} else {
-				System.out.println("from " + path.get(sourceId).getName() + " go to " + path.get(i).getName() + " on " + currentLine + " line");
-				sourceId = i;
+				currentLine = nextLine;
 			}
-			currentLine = nextLine;
 		}
 	}
 

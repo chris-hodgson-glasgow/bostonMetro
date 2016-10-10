@@ -18,6 +18,7 @@ class Graph implements IGraph {
      */
     public void setNode(int id, String name){
         INode node = new Station(id, name);
+
         nodes.put(node.getId(), node);
     }
 
