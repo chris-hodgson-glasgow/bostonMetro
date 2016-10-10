@@ -15,12 +15,13 @@ public class App {
 			ArrayList<IEdge> edges = metro.getTrackList();
 
 			Scanner scanner = new Scanner(System.in);
-			INode src = validate(nodes, edges, "What is the Station you are starting at?", scanner);
-			INode dest = validate(nodes, edges, "Which Station would you like to go to?", scanner);
+			System.out.println("Type q to quit");
+			INode src = validate(nodes, edges, "What is the station you are starting at?", scanner);
+			INode dest = validate(nodes, edges, "Which station would you like to go to?", scanner);
 			scanner.close();
-
 			List<INode> path = metro.getPath(src, dest);
-			if(path != null){
+
+			if (path != null) {
 				System.out.println("\nPath found");
 				makeSummary(path, edges);
 			} else {
@@ -58,8 +59,17 @@ public class App {
 		String currentLine = getLine(path.get(0).getId(), path.get(1).getId(), edges);
 		String nextLine;
 		int sourceId = 0;
-		if (path.size() < 2) {
-			System.out.println("Go from station " + path.get(0).getName() + " to the next stop at station ");
+
+		if (path.size() == 2) {
+			System.out.println("Go from station " + path.get(0).getName() + " to the next stop at station " + path.get(1).getName() + " on the " + currentLine + " line");
+		} else if(path.size() == 3) {
+			nextLine = getLine(path.get(1).getId(), path.get(2).getId(), edges);
+			if(nextLine.equals(currentLine)) {
+				System.out.println("from station " + path.get(0).getName() + " stay on the " + currentLine + " line until you reach station " + path.get(2).getName());
+			} else {
+				System.out.println("Go from station " + path.get(0).getName() + " to station " + path.get(1).getName() + " on " + currentLine + " line");
+				System.out.println("Go from station " + path.get(1).getName() + " to station " + path.get(2).getName() + " on " + nextLine + " line");
+			}
 		} else {
 			for (int i = 2; i < path.size() - 1; i++) {
 				nextLine = getLine(path.get(i).getId(), path.get(i + 1).getId(), edges);
@@ -68,7 +78,7 @@ public class App {
 						System.out.println("from station " + path.get(sourceId).getName() + " stay on the " + currentLine + " line until you reach station " + path.get(i + 1).getName());
 					}
 				} else {
-					System.out.println("from station " + path.get(sourceId).getName() + " go to station " + path.get(i).getName() + " on " + currentLine + " line");
+					System.out.println("from station " + path.get(sourceId).getName() + " go to station " + path.get(i).getName() + " on the " + currentLine + " line");
 					sourceId = i;
 				}
 				currentLine = nextLine;
@@ -117,5 +127,10 @@ public class App {
 		}
 
 		return (targetNode);
+	}
+
+	private static void quit(){
+		System.out.println("Quitting...");
+		System.exit(0);
 	}
 }
