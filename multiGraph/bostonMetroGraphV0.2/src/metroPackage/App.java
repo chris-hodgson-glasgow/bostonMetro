@@ -1,40 +1,12 @@
 package metroPackage;
 
-import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 
 public class App {
-
-	public static void main(String[] args) {
-		try {
-			MetroMapParser parser = new MetroMapParser("bostonmetro.txt");
-			Metro g = new Metro();
-			parser.generateGraphFromFile(g);
-
-			Metro metro = parser.getGraph();
-			Map<Integer, INode> nodes = metro.getStationList();
-			ArrayList<IEdge> edges = metro.getTrackList();
-
-			System.out.println("Type q to quit");
-			Scanner scanner = new Scanner(System.in);
-			INode src = validate(nodes, edges, "What is the station you are starting at?", scanner);
-			INode dest = validate(nodes, edges, "Which station would you like to go to?", scanner);
-			scanner.close();
-			List<INode> path = metro.getPath(src, dest);
-
-			if (path != null) {
-				System.out.println("\nPath found");
-				makeSummary(path, edges);
-			} else {
-				System.out.println("\nNo such path exists");
-			}
-
-		} catch (IOException e) {
-			System.err.println("bostonmetro.txt not found");
-		} catch (BadFileException e){
-			System.err.println("Incompatible file, must be bostonmetro.txt");
-		}
-	}
 
 	private static String getLineName(INode stationFound, ArrayList<IEdge> edges){
 		for (IEdge edge : edges) {
@@ -56,7 +28,7 @@ public class App {
 		return null;
 	}
 
-	private static void makeSummary(List<INode> path, ArrayList<IEdge> edges){
+	static void makeSummary(List<INode> path, ArrayList<IEdge> edges){
 		if(path.size() == 1) {
 			System.out.println("You're already here");
 		} else {
@@ -68,6 +40,7 @@ public class App {
 				System.out.println("Go from station " + path.get(0).getName() + " to the next stop at station " + path.get(1).getName() + " on the " + currentLine + " line");
 			} else if (path.size() == 3) {
 				nextLine = getLine(path.get(1).getId(), path.get(2).getId(), edges);
+				assert nextLine != null;
 				if (nextLine.equals(currentLine)) {
 					System.out.println("from station " + path.get(0).getName() + " stay on the " + currentLine + " line until you reach station " + path.get(2).getName());
 				} else {
@@ -77,6 +50,7 @@ public class App {
 			} else {
 				for (int i = 2; i < path.size() - 1; i++) {
 					nextLine = getLine(path.get(i).getId(), path.get(i + 1).getId(), edges);
+					assert nextLine != null;
 					if (nextLine.equals(currentLine)) {
 						if (i == path.size() - 2) {
 							System.out.println("from station " + path.get(sourceId).getName() + " stay on the " + currentLine + " line until you reach station " + path.get(i + 1).getName());
@@ -91,7 +65,7 @@ public class App {
 		}
 	}
 
-	private static INode validate(Map<Integer, INode> nodes, ArrayList<IEdge> edges, String node, Scanner scanner){
+	static INode validate(Map<Integer, INode> nodes, ArrayList<IEdge> edges, String node, Scanner scanner){
 		Map<String, INode> stationsFound = new HashMap<>();
 		int stationCounter = 0;
 		Boolean found = false;
@@ -132,10 +106,5 @@ public class App {
 		}
 
 		return (targetNode);
-	}
-
-	private static void quit(){
-		System.out.println("Quitting...");
-		System.exit(0);
 	}
 }
