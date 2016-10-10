@@ -52,7 +52,7 @@ public class MetroMapParser
 
     private BufferedReader fileInput;
     private Metro metroMap;
-    
+
     /**
      * @effects: creates a new parser that will read from the file
      * filename unless the file does not exist. The filename should specify
