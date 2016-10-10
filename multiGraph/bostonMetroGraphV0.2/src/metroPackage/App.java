@@ -54,7 +54,7 @@ public class App {
 			System.out.println(node);
 			input = scanner.next();
 			for (int i = 1; i < nodes.size(); i++){
-				if(nodes.get(i).getName().equals(input)){
+				if(nodes.get(i).getName().equalsIgnoreCase(input)){
 					found = true;
 					stationsFound.put(getLineName(nodes.get(i), edges), nodes.get(i));
 					if(stationCounter < 1) targetNode = stationsFound.get(getLineName(nodes.get(i), edges));
