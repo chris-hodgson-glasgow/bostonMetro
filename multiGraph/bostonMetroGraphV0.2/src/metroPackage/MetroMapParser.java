@@ -52,16 +52,7 @@ public class MetroMapParser
 
     private BufferedReader fileInput;
     private Metro metroMap;
-
-    private static void usage()
-    {
-        //prints a usage message to System.out
-        System.out.println("java MetroMapParser <filename>");
-    }
-
-
-
-
+    
     /**
      * @effects: creates a new parser that will read from the file
      * filename unless the file does not exist. The filename should specify
