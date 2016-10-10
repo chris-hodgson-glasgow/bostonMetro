@@ -18,8 +18,8 @@ public class App {
 			ArrayList<IEdge> edges = metro.getEdgeList();
 
 			Scanner scanner = new Scanner(System.in);
-			INode src = validate(nodes, edges, "src", scanner);
-			INode dest = validate(nodes, edges, "dest", scanner);
+			INode src = validate(nodes, edges, "What is the Station you are starting at?", scanner);
+			INode dest = validate(nodes, edges, "Which Station would you like to go to?", scanner);
 			scanner.close();
 
 			if(metro.getPath(src, dest) != null){
@@ -36,7 +36,7 @@ public class App {
 	private static String getLineName(INode stationFound, ArrayList<IEdge> edges){
 		for (IEdge edge : edges) {
 			if (edge.getNodeAId() == stationFound.getId() || edge.getNodeBId() == stationFound.getId()) {
-				return (edge.getName());
+				return (edge.getLineName());
 			}
 		}
 

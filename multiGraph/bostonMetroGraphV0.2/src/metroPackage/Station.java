@@ -6,7 +6,7 @@ public class Station implements INode {
 
 	private int id;
 	private String name;
-	private String[] lines;
+
 	
 	//first element of the array is the name of the line and 
 	//second and third are the neighbours on that line. 
@@ -16,12 +16,15 @@ public class Station implements INode {
 	//is empty using Array.deepEquals.
 	private String[] testEmptyArray = new String[2]; 
 	
-	Station(int id, String name, String[] lines){
+	Station(int id, String name){
 		
 		this.id = id;
 		this.name = name;
-		this.lines = lines;
+
 		
+	}
+	public int getId(){
+		return id;
 	}
 
 	public String getName() {

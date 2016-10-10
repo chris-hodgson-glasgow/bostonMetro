@@ -19,7 +19,7 @@ class Metro {
      * @param id	The id of the station to add
      * @param name	The name of the station to add
      */
-    public void setStation(int id, String name){
+    public void setStation(int id, String name,String[] lines){
         metro.setNode(id, name);
     }
 

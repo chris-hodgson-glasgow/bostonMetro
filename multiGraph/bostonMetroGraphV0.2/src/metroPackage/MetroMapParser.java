@@ -185,7 +185,7 @@ public class MetroMapParser
 
                 metroMap.setEdge(lineName,Integer.parseInt(stationID),Integer.parseInt(inboundID));
                 metroMap.setEdge(lineName,Integer.parseInt(outboundID),Integer.parseInt(stationID));
-                inboundID = st.nextToken();
+
                /* System.out.println(lineName);
                 System.out.println(outboundID);
                 System.out.println(inboundID);*/
