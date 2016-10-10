@@ -47,6 +47,10 @@ class App {
 	 * @param edges	all edges in the graph
 	 */
 	static void makeSummary(List<INode> path, ArrayList<IEdge> edges){
+		System.out.println("hi friend");
+		for (INode aPath : path) {
+			System.out.println(aPath.getName());
+		}
 		if(path.size() == 1) {
 			System.out.println("You're already here");
 		} else {
