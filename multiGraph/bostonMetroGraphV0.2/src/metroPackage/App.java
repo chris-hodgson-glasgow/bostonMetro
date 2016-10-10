@@ -36,7 +36,7 @@ public class App {
 	private static String getLineName(INode stationFound, ArrayList<IEdge> edges){
 		for (IEdge edge : edges) {
 			if (edge.getNodeAId() == stationFound.getId() || edge.getNodeBId() == stationFound.getId()) {
-				return (edge.getLineName());
+				return (edge.getName());
 			}
 		}
 
