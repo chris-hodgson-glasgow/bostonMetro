@@ -47,10 +47,6 @@ class App {
 	 * @param edges	all edges in the graph
 	 */
 	static void makeSummary(List<INode> path, ArrayList<IEdge> edges){
-		System.out.println("hi friend");
-		for (INode aPath : path) {
-			System.out.println(aPath.getName());
-		}
 		if(path.size() == 1) {
 			System.out.println("You're already here");
 		} else {
@@ -78,13 +74,18 @@ class App {
 							System.out.println("from station " + path.get(sourceId).getName() + " stay on the " + currentLine + " line until you reach station " + path.get(i + 1).getName());
 						}
 					} else {
-						if(path.get(sourceId).getName().equals(path.get(i).getName())){
+						if(path.get(sourceId).getName().equals(path.get(i).getName())) {
 							System.out.println("from station " + path.get(sourceId).getName() + " change to station " + path.get(i + 1).getName() + " on the " + nextLine + " line");
+							sourceId = i + 1;
+						} else if(i == 2) {
+							System.out.println("from station " + path.get(sourceId).getName() + " go to station " + path.get(i - 1).getName() + " on the " + currentLine +
+									" line and change to station " + path.get(i).getName() + " on the " + nextLine + " line");
+							sourceId = i;
 						} else {
 							System.out.println("from station " + path.get(sourceId).getName() + " go to station " + path.get(i).getName() + " on the " + currentLine +
 									" line and change to station " + path.get(i + 1).getName() + " on the " + nextLine + " line");
+							sourceId = i + 1;
 						}
-						sourceId = i + 1;
 					}
 					currentLine = nextLine;
 				}

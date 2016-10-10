@@ -21,8 +21,8 @@ class Track implements IEdge{
     }
 
     /**
-     * gets the stations name
-     * @return  the stations name
+     * gets the tracks name
+     * @return  the tracks name
      */
     public String getName() {
         return (lineName);
