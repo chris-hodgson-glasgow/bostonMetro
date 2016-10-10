@@ -1,10 +1,7 @@
 package metroPackage;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class App {
 
@@ -22,8 +19,10 @@ public class App {
 			INode dest = validate(nodes, edges, "Which Station would you like to go to?", scanner);
 			scanner.close();
 
-			if(metro.getPath(src, dest) != null){
+			List<INode> path = metro.getPath(src, dest);
+			if(path != null){
 				System.out.println("\nPath found");
+				makeSummary(path, edges);
 			} else {
 				System.out.println("\nNo such path exists");
 			}
@@ -41,6 +40,34 @@ public class App {
 		}
 
 		return (null);
+	}
+
+	private static String getLine(int nodeAId, int nodeBId, ArrayList<IEdge> edges){
+		for(IEdge edge : edges){
+			if(edge.getNodeAId() == nodeAId && edge.getNodeBId() == nodeBId ||
+					edge.getNodeBId() == nodeAId && edge.getNodeAId() == nodeBId){
+				return(edge.getName());
+			}
+		}
+		return null;
+	}
+
+	private static void makeSummary(List<INode> path, ArrayList<IEdge> edges){
+		String currentLine = getLine(path.get(0).getId(), path.get(1).getId(), edges);
+		String nextLine;
+		int sourceId = 0;
+		for(int i = 2; i < path.size() - 1; i++){
+			nextLine = getLine(path.get(i).getId(), path.get(i + 1).getId(), edges);
+			if(nextLine.equals(currentLine)){
+				if(i == path.size() - 2){
+					System.out.println("from " + path.get(sourceId).getName() + " stay on the " + currentLine + " line until you reach " + path.get(i + 1).getName());
+				}
+			} else {
+				System.out.println("from " + path.get(sourceId).getName() + " go to " + path.get(i).getName() + " on " + currentLine + " line");
+				sourceId = i;
+			}
+			currentLine = nextLine;
+		}
 	}
 
 	private static INode validate(Map<Integer, INode> nodes, ArrayList<IEdge> edges, String node, Scanner scanner){

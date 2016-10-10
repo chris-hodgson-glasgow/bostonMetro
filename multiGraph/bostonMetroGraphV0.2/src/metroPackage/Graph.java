@@ -93,9 +93,6 @@ class Graph implements IGraph {
                     node = prev.get(node);
                 }
                 Collections.reverse(path);
-                for (INode aPath : path) {
-                    System.out.println(aPath.getName());
-                }
                 return (path);
             } else {
                 for (INode node : getNeighbours(current)){
