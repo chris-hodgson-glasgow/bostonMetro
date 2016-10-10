@@ -183,18 +183,12 @@ public class MetroMapParser
 
                 inboundID = st.nextToken();
 
-                metroMap.setTrack(lineName,Integer.parseInt(stationID),Integer.parseInt(inboundID));
                 metroMap.setTrack(lineName,Integer.parseInt(outboundID),Integer.parseInt(stationID));
-                inboundID = st.nextToken();
-               /* System.out.println(lineName);
-                System.out.println(outboundID);
-                System.out.println(inboundID);*/
+                metroMap.setTrack(lineName,Integer.parseInt(stationID),Integer.parseInt(inboundID));
             }
 
             metroMap.setStation(Integer.parseInt(stationID),stationName);
             line = fileInput.readLine();
-            /*System.out.println(stationID);
-            System.out.println(stationName);*/
 
         }
 

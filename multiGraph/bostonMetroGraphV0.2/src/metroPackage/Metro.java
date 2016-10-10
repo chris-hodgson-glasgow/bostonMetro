@@ -19,7 +19,7 @@ class Metro {
      * @param id	The id of the station to add
      * @param name	The name of the station to add
      */
-    public void setStation(int id, String name){
+    void setStation(int id, String name){
         metro.setNode(id, name);
     }
 
@@ -29,7 +29,7 @@ class Metro {
      * @param stationAId    The id of the first station on this track
      * @param stationBId 	The id of the second stationBId on this track
      */
-    public void setTrack(String lineName,int stationAId, int stationBId){
+    void setTrack(String lineName, int stationAId, int stationBId){
         metro.setEdge(lineName,stationAId, stationBId);
     }
 
@@ -37,7 +37,7 @@ class Metro {
      * Gets all stations in the subway
      * @return  All stations in the subway
      */
-    public Map<Integer, INode> getStationList(){
+    Map<Integer, INode> getStationList(){
         return (metro.getNodeList());
     }
 
@@ -45,7 +45,7 @@ class Metro {
      * Gets all tracks in the subway
      * @return  All tracks in the subway
      */
-    public ArrayList<IEdge> getTrackList(){
+    ArrayList<IEdge> getTrackList(){
         return (metro.getEdgeList());
     }
 
@@ -55,7 +55,7 @@ class Metro {
      * @param dest  The destination station
      * @return      The stations along the shortest path from src to dest
      */
-    public List<INode> getPath(INode src, INode dest){
+    List<INode> getPath(INode src, INode dest){
         return metro.getPath(src, dest);
     }
 }

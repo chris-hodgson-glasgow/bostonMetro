@@ -5,4 +5,5 @@ interface INode {
 	String getName();
 	
 	int getId();
+
 }

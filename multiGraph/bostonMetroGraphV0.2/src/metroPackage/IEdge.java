@@ -1,40 +1,23 @@
 package metroPackage;
 
-public interface IEdge {
+interface IEdge {
 
 	/**
-	 * Gets the edge id.
-	 * @return the Edge id
+	 * Gets the edge name.
+	 * @return the Edge name
 	 */
-	public String getlineName();
+	public String getName();
 
 	/**
 	 * Gets first adjacent node
 	 * @return The Node with matching id
 	 */
-	public INode getNodeA();
+	public int getNodeAId();
 
 	/**
 	 * Gets second adjacent node
 	 * @return The Node with matching id
 	 */
-	public 	INode getNodeB();
+	public 	int getNodeBId();
 
-	/**
-	 * Sets the id of this edge
-	 * @param id id to set
-	 */
-	public void setId(int id);
-
-	/**
-	 * Sets the first adjacent node on THIShis edge
-	 * @param nodeA Node to set as first adjacent node
-	 */
-	public void setNodeA(INode nodeA);
-
-	/**
-	 * Sets the second adjacent node on this edge
-	 * @param nodeB Node to set as second adjacent node
-	 */
-	public void setNodeB(INode nodeB);
 }

@@ -1,40 +1,31 @@
 package metroPackage;
 
 
-public class Track implements IEdge{
+class Track implements IEdge{
 
+    private String lineName;
+    private int outboundID;
+    private int inboundID;
 
-
-        private String lineName;
-        private int outboundID;
-        private int inboundID;
-
-
-
-
-
-        Track(String name,int outboundID, int inboundID){
-
-            this.lineName = name;
-            this.outboundID = outboundID;
-            this.inboundID = inboundID;
-
-        }
-
-
-        public String getName() {
-            return lineName;
-        }
-
-        public INode getNodeA() {
-            return null;
-        }
-
-
-        public INode getNodeB() {
-            return null;
-        }
+    Track(String lineName, int outboundID, int inboundID) {
+        this.lineName = lineName;
+        this.outboundID = outboundID;
+        this.inboundID = inboundID;
 
     }
 
+    public String getName() {
+        return (lineName);
+    }
+
+    public int getNodeAId() {
+        return (outboundID);
+    }
+
+    public int getNodeBId() {
+        return (inboundID);
+    }
+
 }
+
+
