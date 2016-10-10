@@ -56,8 +56,12 @@ public class App {
 							System.out.println("from station " + path.get(sourceId).getName() + " stay on the " + currentLine + " line until you reach station " + path.get(i + 1).getName());
 						}
 					} else {
-						System.out.println("from station " + path.get(sourceId).getName() + " go to station " + path.get(i).getName() + " on the " + currentLine +
-						" line and change to station " + path.get(i + 1).getName() + " on the " + nextLine + " line");
+						if(path.get(sourceId).getName().equals(path.get(i).getName())){
+							System.out.println("from station " + path.get(sourceId).getName() + " change to to station " + path.get(i + 1).getName() + " on the " + nextLine + " line");
+						} else {
+							System.out.println("from station " + path.get(sourceId).getName() + " go to station " + path.get(i).getName() + " on the " + currentLine +
+									" line and change to station " + path.get(i + 1).getName() + " on the " + nextLine + " line");
+						}
 						sourceId = i + 1;
 					}
 					currentLine = nextLine;
