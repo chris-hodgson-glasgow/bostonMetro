@@ -15,8 +15,8 @@ public class App {
 			Map<Integer, INode> nodes = metro.getStationList();
 			ArrayList<IEdge> edges = metro.getTrackList();
 
-			Scanner scanner = new Scanner(System.in);
 			System.out.println("Type q to quit");
+			Scanner scanner = new Scanner(System.in);
 			INode src = validate(nodes, edges, "What is the station you are starting at?", scanner);
 			INode dest = validate(nodes, edges, "Which station would you like to go to?", scanner);
 			scanner.close();
@@ -57,32 +57,36 @@ public class App {
 	}
 
 	private static void makeSummary(List<INode> path, ArrayList<IEdge> edges){
-		String currentLine = getLine(path.get(0).getId(), path.get(1).getId(), edges);
-		String nextLine;
-		int sourceId = 0;
-
-		if (path.size() == 2) {
-			System.out.println("Go from station " + path.get(0).getName() + " to the next stop at station " + path.get(1).getName() + " on the " + currentLine + " line");
-		} else if(path.size() == 3) {
-			nextLine = getLine(path.get(1).getId(), path.get(2).getId(), edges);
-			if(nextLine.equals(currentLine)) {
-				System.out.println("from station " + path.get(0).getName() + " stay on the " + currentLine + " line until you reach station " + path.get(2).getName());
-			} else {
-				System.out.println("Go from station " + path.get(0).getName() + " to station " + path.get(1).getName() + " on " + currentLine + " line");
-				System.out.println("Go from station " + path.get(1).getName() + " to station " + path.get(2).getName() + " on " + nextLine + " line");
-			}
+		if(path.size() == 1) {
+			System.out.println("You're already here");
 		} else {
-			for (int i = 2; i < path.size() - 1; i++) {
-				nextLine = getLine(path.get(i).getId(), path.get(i + 1).getId(), edges);
+			String currentLine = getLine(path.get(0).getId(), path.get(1).getId(), edges);
+			String nextLine;
+			int sourceId = 0;
+
+			if (path.size() == 2) {
+				System.out.println("Go from station " + path.get(0).getName() + " to the next stop at station " + path.get(1).getName() + " on the " + currentLine + " line");
+			} else if (path.size() == 3) {
+				nextLine = getLine(path.get(1).getId(), path.get(2).getId(), edges);
 				if (nextLine.equals(currentLine)) {
-					if (i == path.size() - 2) {
-						System.out.println("from station " + path.get(sourceId).getName() + " stay on the " + currentLine + " line until you reach station " + path.get(i + 1).getName());
-					}
+					System.out.println("from station " + path.get(0).getName() + " stay on the " + currentLine + " line until you reach station " + path.get(2).getName());
 				} else {
-					System.out.println("from station " + path.get(sourceId).getName() + " go to station " + path.get(i).getName() + " on the " + currentLine + " line");
-					sourceId = i;
+					System.out.println("Go from station " + path.get(0).getName() + " to station " + path.get(1).getName() + " on " + currentLine + " line");
+					System.out.println("Go from station " + path.get(1).getName() + " to station " + path.get(2).getName() + " on " + nextLine + " line");
 				}
-				currentLine = nextLine;
+			} else {
+				for (int i = 2; i < path.size() - 1; i++) {
+					nextLine = getLine(path.get(i).getId(), path.get(i + 1).getId(), edges);
+					if (nextLine.equals(currentLine)) {
+						if (i == path.size() - 2) {
+							System.out.println("from station " + path.get(sourceId).getName() + " stay on the " + currentLine + " line until you reach station " + path.get(i + 1).getName());
+						}
+					} else {
+						System.out.println("from station " + path.get(sourceId).getName() + " go to station " + path.get(i).getName() + " on the " + currentLine + " line");
+						sourceId = i;
+					}
+					currentLine = nextLine;
+				}
 			}
 		}
 	}
