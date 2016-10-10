@@ -17,7 +17,7 @@ class Graph implements IGraph {
      * @param name	The name of the node to add
      */
     public void setNode(int id, String name){
-        INode station = new Station(id, name);
+        INode node = new Station(id, name);
         nodes.put(station.getId(), station);
     }
 

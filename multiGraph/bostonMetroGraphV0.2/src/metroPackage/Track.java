@@ -22,10 +22,9 @@ public class Track implements IEdge{
         }
 
 
-        public String getlineName() {
+        public String getName() {
             return lineName;
-
-
+        }
 
         public INode getNodeA() {
             return null;
@@ -36,19 +35,6 @@ public class Track implements IEdge{
             return null;
         }
 
-        public void setId(int id) {
-
-        }
-
-
-        public void setNodeA(INode nodeA) {
-
-        }
-
-
-        public void setNodeB(INode nodeB) {
-
-        }
     }
 
 }

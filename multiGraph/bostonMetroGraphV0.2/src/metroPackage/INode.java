@@ -1,11 +1,8 @@
 package metroPackage;
 
-public interface INode {
+interface INode {
 
-	public String getName();
+	String getName();
 	
-	public String[] getNeighbours(String edge);
-	
-	
-	
+	int getId();
 }

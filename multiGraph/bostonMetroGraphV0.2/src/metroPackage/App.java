@@ -13,9 +13,9 @@ public class App {
 			MetroMapParser parser = new MetroMapParser("bostonmetro.txt");
 			parser.generateGraphFromFile();
 
-			IGraph metro = parser.getGraph();
-			Map<Integer, INode> nodes = metro.getNodeList();
-			ArrayList<IEdge> edges = metro.getEdgeList();
+			Metro metro = parser.getGraph();
+			Map<Integer, INode> nodes = metro.getStationList();
+			ArrayList<IEdge> edges = metro.getTrackList();
 
 			Scanner scanner = new Scanner(System.in);
 			INode src = validate(nodes, edges, "src", scanner);
