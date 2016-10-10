@@ -5,36 +5,8 @@ import java.util.*;
 
 public class App {
 
-	public static void main(String[] args) {
-		try {
-			MetroMapParser parser = new MetroMapParser("bostonmetro.txt");
-			Metro g = new Metro();
-			parser.generateGraphFromFile(g);
 
-			Metro metro = parser.getGraph();
-			Map<Integer, INode> nodes = metro.getStationList();
-			ArrayList<IEdge> edges = metro.getTrackList();
 
-			Scanner scanner = new Scanner(System.in);
-			System.out.println("Type q to quit");
-			INode src = validate(nodes, edges, "What is the station you are starting at?", scanner);
-			INode dest = validate(nodes, edges, "Which station would you like to go to?", scanner);
-			scanner.close();
-			List<INode> path = metro.getPath(src, dest);
-
-			if (path != null) {
-				System.out.println("\nPath found");
-				makeSummary(path, edges);
-			} else {
-				System.out.println("\nNo such path exists");
-			}
-
-		} catch (IOException e) {
-			System.err.println("bostonmetro.txt not found");
-		} catch (BadFileException e){
-			System.err.println("Incompatible file, must be bostonmetro.txt");
-		}
-	}
 
 	private static String getLineName(INode stationFound, ArrayList<IEdge> edges){
 		for (IEdge edge : edges) {
@@ -56,7 +28,7 @@ public class App {
 		return null;
 	}
 
-	private static void makeSummary(List<INode> path, ArrayList<IEdge> edges){
+	public static void makeSummary(List<INode> path, ArrayList<IEdge> edges){
 		String currentLine = getLine(path.get(0).getId(), path.get(1).getId(), edges);
 		String nextLine;
 		int sourceId = 0;
@@ -87,7 +59,7 @@ public class App {
 		}
 	}
 
-	private static INode validate(Map<Integer, INode> nodes, ArrayList<IEdge> edges, String node, Scanner scanner){
+	public static INode validate(Map<Integer, INode> nodes, ArrayList<IEdge> edges, String node, Scanner scanner){
 		Map<String, INode> stationsFound = new HashMap<>();
 		int stationCounter = 0;
 		Boolean found = false;
