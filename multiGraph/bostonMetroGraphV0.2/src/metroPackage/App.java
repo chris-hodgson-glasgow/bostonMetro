@@ -8,7 +8,8 @@ public class App {
 	public static void main(String[] args) {
 		try {
 			MetroMapParser parser = new MetroMapParser("bostonmetro.txt");
-			parser.generateGraphFromFile();
+			Metro g = new Metro();
+			parser.generateGraphFromFile(g);
 
 			Metro metro = parser.getGraph();
 			Map<Integer, INode> nodes = metro.getStationList();
