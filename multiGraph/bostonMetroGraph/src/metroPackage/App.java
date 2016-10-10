@@ -6,8 +6,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
-public class App {
+class App {
 
+	/**
+	 * Gets a line name
+	 * @param stationFound	the station to check
+	 * @param edges			all edges in the graph
+	 * @return 				the edge name for that station or null if not found
+	 */
 	private static String getLineName(INode stationFound, ArrayList<IEdge> edges){
 		for (IEdge edge : edges) {
 			if (edge.getNodeAId() == stationFound.getId() || edge.getNodeBId() == stationFound.getId()) {
@@ -18,6 +24,13 @@ public class App {
 		return (null);
 	}
 
+	/**
+	 * Gets a line name between 2 stations
+	 * @param nodeAId	the id for the first node on this line
+	 * @param nodeBId	the id for the second node on this line
+	 * @param edges		all edges in the graph
+	 * @return			the edge name for the edge between nodeA and nodeB or null if not found
+	 */
 	private static String getLine(int nodeAId, int nodeBId, ArrayList<IEdge> edges){
 		for(IEdge edge : edges){
 			if(edge.getNodeAId() == nodeAId && edge.getNodeBId() == nodeBId ||
@@ -28,6 +41,11 @@ public class App {
 		return null;
 	}
 
+	/**
+	 * Generates a summary of the shortest path
+	 * @param path	The nodes along the shortest path
+	 * @param edges	all edges in the graph
+	 */
 	static void makeSummary(List<INode> path, ArrayList<IEdge> edges){
 		if(path.size() == 1) {
 			System.out.println("You're already here");
@@ -57,7 +75,7 @@ public class App {
 						}
 					} else {
 						if(path.get(sourceId).getName().equals(path.get(i).getName())){
-							System.out.println("from station " + path.get(sourceId).getName() + " change to to station " + path.get(i + 1).getName() + " on the " + nextLine + " line");
+							System.out.println("from station " + path.get(sourceId).getName() + " change to station " + path.get(i + 1).getName() + " on the " + nextLine + " line");
 						} else {
 							System.out.println("from station " + path.get(sourceId).getName() + " go to station " + path.get(i).getName() + " on the " + currentLine +
 									" line and change to station " + path.get(i + 1).getName() + " on the " + nextLine + " line");
@@ -70,6 +88,14 @@ public class App {
 		}
 	}
 
+	/**
+	 * Validates user input
+	 * @param nodes		all nodes in the graph
+	 * @param edges		all edges in the graph
+	 * @param node		the node we need from the user
+	 * @param scanner	the Scanner object
+	 * @return			a node that exists in the graph
+	 */
 	static INode validate(Map<Integer, INode> nodes, ArrayList<IEdge> edges, String node, Scanner scanner){
 		Map<String, INode> stationsFound = new HashMap<>();
 		int stationCounter = 0;

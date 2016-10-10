@@ -1,14 +1,16 @@
 package metroPackage;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 
 public class Driver {public static void main(String[] args) {
     try {
         MetroMapParser parser = new MetroMapParser("bostonmetro.txt");
         Metro metro = new Metro();
         parser.generateGraphFromFile(metro);
-        App userInput = new App();
         Map<Integer, INode> nodes = metro.getStationList();
         ArrayList<IEdge> edges = metro.getTrackList();
 
