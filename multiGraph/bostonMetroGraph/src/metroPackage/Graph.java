@@ -14,6 +14,9 @@ class Graph implements IGraph {
     private Map<Integer, INode> nodes;
     private ArrayList<IEdge> edges;
 
+    /**
+     * Constructor initialises nodes HashMap and edges ArrayList
+     */
     Graph(){
         nodes = new HashMap<>();
         edges = new ArrayList<>();
