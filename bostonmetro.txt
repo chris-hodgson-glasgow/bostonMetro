@@ -14,8 +14,8 @@
  14 Harvard			    Red 10 21 
  15 CommunityCollege		    Orange 12 20 
  16 Airport			    Blue 13 18 
- 17 Lechmere			    Green 0 19 
- 18 Maverick			    Blue 16 26 
+ 17 Lechmere			    Green 0 19
+ 18 Maverick			    Blue 16 26
  19 SciencePark			    Green 17 20 
  20 NorthStation		    Green 19 22  Orange 15 22 
  21 Central			    Red 14 23 

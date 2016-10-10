@@ -26,7 +26,6 @@ class Station implements INode {
 		Station station = (Station) o;
 
 		return id == station.id && name.equals(station.name);
-
 	}
 
 	@Override

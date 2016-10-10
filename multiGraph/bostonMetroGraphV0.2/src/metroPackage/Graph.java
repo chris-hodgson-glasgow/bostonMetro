@@ -1,6 +1,15 @@
 package metroPackage;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+import java.util.Set;
+import java.util.TreeSet;
 
 class Graph implements IGraph {
     private Map<Integer, INode> nodes;
@@ -18,7 +27,12 @@ class Graph implements IGraph {
      */
     public void setNode(int id, String name){
         INode node = new Station(id, name);
-
+        for(int i = 1; i < nodes.size(); i++){
+            if(nodes.get(i).equals(node)){
+                System.out.println("Duplicate not added");
+                return;
+            }
+        }
         nodes.put(node.getId(), node);
     }
 

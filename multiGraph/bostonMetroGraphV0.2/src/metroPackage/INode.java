@@ -6,4 +6,9 @@ interface INode {
 	
 	int getId();
 
+	@Override
+	boolean equals(Object o);
+
+	@Override
+	public int hashCode();
 }
