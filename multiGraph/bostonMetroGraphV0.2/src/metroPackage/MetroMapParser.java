@@ -53,29 +53,6 @@ public class MetroMapParser
     private BufferedReader fileInput;
     private Metro metroMap;
 
-    public static void main(String[] args)
-    {
-
-        if(args.length != 1)
-        {
-            usage();
-            System.exit(0);
-        }
-
-        String filename = args[0];
-
-        try
-        {
-            MetroMapParser mmp = new MetroMapParser(filename);
-            mmp.generateGraphFromFile();
-        }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-        }
-    }
-
-
     private static void usage()
     {
         //prints a usage message to System.out
@@ -118,7 +95,7 @@ public class MetroMapParser
     }
 
 
-    void  generateGraphFromFile()
+    void  generateGraphFromFile(Metro g)
             throws IOException, BadFileException
     {
 
@@ -128,7 +105,7 @@ public class MetroMapParser
         String stationName;
         String lineName;
         String outboundID, inboundID;
-        metroMap = new Metro();
+        metroMap = g;
 
         while(line != null)
         {
