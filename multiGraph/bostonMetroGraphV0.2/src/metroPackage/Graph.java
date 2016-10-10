@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
-import java.util.TreeSet;
 
 class Graph implements IGraph {
     private Map<Integer, INode> nodes;
@@ -26,14 +25,22 @@ class Graph implements IGraph {
      * @param name	The name of the node to add
      */
     public void setNode(int id, String name){
-        INode node = new Station(id, name);
-        for(int i = 1; i < nodes.size(); i++){
-            if(nodes.get(i).equals(node)){
-                System.out.println("Duplicate not added");
-                return;
-            }
+        INode station = new Station(id, name);
+        boolean contains = false;
+
+        List keys = new ArrayList<>(nodes.keySet());
+        for (Object obj : keys) {
+            if (station.equals(obj))
+                contains = true;
         }
-        nodes.put(node.getId(), node);
+
+        if(!contains){
+            nodes.put(station.getId(), station);
+        }
+        else {
+            System.out.println("Error: Node " + station.getId()
+                    + ", " + station.getName() + " already exists.");
+        }
     }
 
     /**
